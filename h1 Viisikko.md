@@ -25,7 +25,6 @@ Lopuksi aikavyöhykkeen asentamista, jotta ohjelmat toimivat oikein: ```timedate
 x) Lue ja tiivistä
 ===
 Karvinen 2025: Install Salt on Debian 13 Trixie:
-
 - Salt on hallintatyökalu, joka mahdollistaa Windows - koneiden ja Linux - koneiden ohjaamisen yhtäaikaisesti.
 - Salt ei ole Debianin vakio-ohjelmalähteissä, joten tarvitaan uusi apt-repositorio.
 - Uusi apt-repositorio koostuu kahdesta tiedostosta:
@@ -35,6 +34,18 @@ Karvinen 2023: Run Salt Command Locally
 - Salt-komentoja voi ajaa paikallisesti, jolloin näet tulokset heti – hyvä harjoitteluun ja testaukseen.
 - Salt toimii sekä Linuxissa että Windowsissa, joten samoja komentoja voi käyttää molemmissa.
 - Tärkeimmät Saltin tilatoiminnot ovat: ```pkg```, ```file```, ```service```, ```user``` ja ```cmd```.
+
+Karvinen 2018: Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux
+- Saltilla voit hallita tuhansia tietokoneita yhdestä palvelimesta.
+- Ohjattavat koneet (minionit) voivat olla missä tahansa – NATin tai palomuurin takana – kunhan master-palvelimella on julkinen IP-osoite.
+- Opettele kirjoittamaan state-tiedostoja, jotka määrittelevät minionien tavoitetilan.
+
+Karvinen 2006: Raportin kirjoittaminen
+- Viittaa lähteisiin – se osoittaa perehtyneisyyttä ja noudattaa akateemista käytäntöä.
+- Raportointi auttaa selkeyttämään ajatuksia ja säästämään aikaa, kun ei tarvitse toistaa kokeita.
+- Hyvä raportti toimii myös ohjeistuksen pohjana muille.
+
+###### 1:31
 
 
 
