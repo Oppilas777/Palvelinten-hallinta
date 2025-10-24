@@ -26,3 +26,15 @@ x) Lue ja tiivistä
 ===
 Karvinen 2025: Install Salt on Debian 13 Trixie:
 
+- Salt on hallintatyökalu, joka mahdollistaa Windows - koneiden ja Linux - koneiden ohjaamisen yhtäaikaisesti.
+- Salt ei ole Debianin vakio-ohjelmalähteissä, joten tarvitaan uusi apt-repositorio.
+- Uusi apt-repositorio koostuu kahdesta tiedostosta:
+- PGP-julkinen avain – ohjelmatiedostoihin luotetaan, kun niiden allekirjoitus vastaa tätä avainta.
+
+Karvinen 2023: Run Salt Command Locally
+- Salt-komentoja voi ajaa paikallisesti, jolloin näet tulokset heti – hyvä harjoitteluun ja testaukseen.
+- Salt toimii sekä Linuxissa että Windowsissa, joten samoja komentoja voi käyttää molemmissa.
+- Tärkeimmät Saltin tilatoiminnot ovat: ```pkg```, ```file```, ```service```, ```user``` ja ```cmd```.
+
+
+
