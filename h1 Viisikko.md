@@ -19,4 +19,5 @@ USB-tikku: PNY 32 GB USB 3.1
 
 x) Lue ja tiivistä
 ===
+Karvinen 2025: Install Salt on Debian 13 Trixie:
 
