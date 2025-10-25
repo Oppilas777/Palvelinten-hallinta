@@ -109,26 +109,40 @@ Tämä oli ensimmäinen ajokerta, joten Salt: Loi ryhmän saltgroup Asetti sille
 <img width="508" height="470" alt="Image" src="https://github.com/user-attachments/assets/d47f0e3c-2413-4d96-a900-011472df8805" />
 
 
-###### 9:02
+###### 9:08
 
 -----
 Lähdeviitteet
 
-https://github.com/jerebjo/Palvelinten-hallinta/blob/main/H1%20viisikko.md
+Luettavissa: https://www.debian.org/News/2025/20250809. Luettu: 25.10.2025.
 
-https://terokarvinen.com/palvelinten-hallinta/#laksyt
+Luettavissa: https://github.com/jerebjo/Palvelinten-hallinta/blob/main/H1%20viisikko.md. Luettu: 25.10.2025.
 
-https://terokarvinen.com/install-salt-on-debian-13-trixie/
+Luettavissa: https://github.com/Oppilas777/linux-course. Luettu: 25.10.2025.
 
-https://terokarvinen.com/2021/salt-run-command-locally/
+Luettavissa: https://github.com/Oppilas777/linux-course/blob/main/h6.md. Luettu: 25.10.2025.
 
-https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
+Luettavissa: https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/. Luettu: 25.10.2025.
 
-https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/
+Luettavissa: https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/. Luettu: 25.10.2025.
 
-https://github.com/Oppilas777/linux-course/blob/main/h6.md
+Luettavissa: https://terokarvinen.com/2021/install-debian-on-virtualbox/. Luettu: 25.10.2025.
 
-https://github.com/Oppilas777/linux-course
+Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/. Luettu: 25.10.2025.
 
-https://terokarvinen.com/2021/install-debian-on-virtualbox/
+Luettavissa: https://terokarvinen.com/install-salt-on-debian-13-trixie/. Luettu: 25.10.2025.
+
+Luettavissa: https://terokarvinen.com/palvelinten-hallinta/#laksyt. Luettu: 25.10.2025.
+
+
+
+
+
+
+
+
+
+
+
+
 
