@@ -52,6 +52,65 @@ Asenna Debian 13-Trixie virtuaalikoneeseen. (Poikkeuksellisesti tätä alakohtaa
 
 b) Asenna Salt (salt-minion) Linuxille (uuteen virtuaalikoneeseesi).
 
-Asennus ei alkuun onnistunut. Ratkaisuksi osottautui 
+Asennus onnistui, mutta tarvittavia testeja ei voi suorittaa. Tama voi johtua siita, etta kaytossa on Liveymparisto.
 <img width="884" height="367" alt="Image" src="https://github.com/user-attachments/assets/5ce152fb-b2d6-496d-88f5-7ec1a78a2107" />
+
+c) Viisi tärkeintä. Näytä Linuxissa esimerkit viidestä tärkeimmästä Saltin tilafunktiosta: pkg, file, service, user, cmd. Analysoi ja selitä tulokset.
+
+Pkg.installed - Asenna paketti. Ajettiin Komento ```sudo ~/salt-venv/bin/salt-call --local state.single pkg.installed name=vim```
+Salt ei asentanut pakettia uudelleen
+Salt ei muuttanut järjestelmää
+Salt palautti onnistuneen tuloksen ilman muutoksia
+<img width="884" height="367" alt="Image" src="https://github.com/user-attachments/assets/a0fa66ef-57b1-41ea-8982-6b6f777aaa67" />
+
+
+file.managed – Luo tiedosto Komento ```sudo ~/salt-venv/bin/salt-call --local state.single file.managed name=/tmp/salt-test.txt contents="Hei Salt!" user=root group=root mode=644```
+<img width="737" height="403" alt="Image" src="https://github.com/user-attachments/assets/d441aed8-c629-47c5-b28e-c9294c7e5ed6" />
+
+Tiedosto on olemassa. Sen sisältö on "Hei Salt!" Omistajuus ja käyttöoikeudet ovat oikein
+
+Sservice.running – Käynnistä palvelu Ajettiin komento ```sudo ~/salt-venv/bin/salt-call --local state.single service.running name=ssh enable=True```
+
+<img width="738" height="406" alt="Image" src="https://github.com/user-attachments/assets/662cff70-34d8-4ac5-be2f-1a573c1f9f2f" />
+Tämä tuloste kertoo, että Saltin service.running-tilafunktio epäonnistui, koska se ei löytänyt palvelua nimeltä ssh. Salt yrittää hallita palvelua nimeltä ssh, mutta Debian-järjestelmässä palvelun nimi voi olla: ssh (jos käytetään OpenSSH:n palvelunimeä) tai sshd (yleisempi nimi OpenSSH-palvelulle)
+
+
+User.account - Luo kayttaja Komento ```sudo ~/salt-venv/bin/salt-call --local state.single user.present name=testuser shell=/bin/bash home=/home/testuser```
+<img width="610" height="945" alt="Image" src="https://github.com/user-attachments/assets/274faad7-8586-4e40-84fd-95c1dd8ae869" />
+Tämä oli ensimmäinen ajokerta, joten Salt:
+Loi käyttäjän testuser
+Asetti kotihakemiston, shellin ja ryhmän
+Raportoi muutokset Changes-kentässä. Toistettavuus: Voit ajaa tilan uudelleen ilman pelkoa tuplakäyttäjistä tai virheistä.
+
+cmd.run Komento ```sudo ~/salt-venv/bin/salt-call --local state.single cmd.run name='echo "Salt toimii!" > /tmp/salt-output.txt' creates=/tmp/salt-output.txt```
+<img width="918" height="629" alt="Image" src="https://github.com/user-attachments/assets/afafffba-1a02-4412-8d3e-74c2b6bbd2b5" />
+
+Salt tarkisti järjestelmän tilan ja havaitsi, että vim-paketti on jo asennettu. Koska tila oli jo halutussa muodossa:
+Salt ei asentanut pakettia uudelleen
+Salt ei muuttanut järjestelmää
+Salt palautti onnistuneen tuloksen ilman muutoksia
+Tämä on idempotenssin ydin: tila voidaan ajaa monta kertaa, mutta järjestelmä ei muutu enää, kun se on kunnossa.
+
+
+d) Idempotentti. Anna esimerkki idempotenssista. Aja 'salt-call --local' komentoja, analysoi tulokset, selitä miten idempotenssi ilmenee.
+
+Komento  ```sudo ~/salt-venv/bin/salt-call --local state.single file.symlink name=/tmp/linkki.txt target=/tmp/salt-test.txt```
+
+<img width="739" height="479" alt="Image" src="https://github.com/user-attachments/assets/227a62e4-e049-4b3f-9a56-c66d6f5d56d9" />
+    Symboliset linkit voivat helposti mennä rikki tai osoittaa väärään paikkaan.
+
+    Salt varmistaa, että linkki on olemassa ja osoittaa oikeaan kohteeseen.
+
+    Jos kaikki on kunnossa, Salt ei tee turhia muutoksia.
+
+
+Group.present - ryhm'n luonti Komento ```sudo ~/salt-venv/bin/salt-call --local state.single group.present name=saltgroup```
+Tämä oli ensimmäinen ajokerta, joten Salt: Loi ryhmän saltgroup Asetti sille GID:n ja muut oletusominaisuudet Raportoi muutokset Changes-kentässä.
+<img width="508" height="470" alt="Image" src="https://github.com/user-attachments/assets/d47f0e3c-2413-4d96-a900-011472df8805" />
+
+
+
+===
+Lahdeviitteet
+
 
