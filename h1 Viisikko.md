@@ -46,6 +46,11 @@ Karvinen 2006: Raportin kirjoittaminen
 - Hyvä raportti toimii myös ohjeistuksen pohjana muille.
 
 ###### 1:31
+###### 6:44
+
+Asenna Debian 13-Trixie virtuaalikoneeseen. (Poikkeuksellisesti tätä alakohtaa ei tarvitse raportoida, jos siinä ei ole mitään ongelmia. Mutta jos on ongelmia, sitten täsmällinen raportti, jotta voidaan ratkoa niitä yhdessä.) Asensin Debian 13 Live - tikulle, koska Virtuaalikone ei toiminut koneellani. 
+
+b) Asenna Salt (salt-minion) Linuxille (uuteen virtuaalikoneeseesi).
 
 
 
