@@ -46,6 +46,7 @@ Karvinen 2006: Raportin kirjoittaminen
 - Hyvä raportti toimii myös ohjeistuksen pohjana muille.
 
 ###### 1:31
+Tässä välissä käynnistin koneen surffailin netissä, ja tutustuin uuteen päivitykseen. Linuxin ladattuani tutustuin myös uuteen käyttöjärjestelmään. 
 ###### 6:44
 
 Asenna Debian 13-Trixie virtuaalikoneeseen. (Poikkeuksellisesti tätä alakohtaa ei tarvitse raportoida, jos siinä ei ole mitään ongelmia. Mutta jos on ongelmia, sitten täsmällinen raportti, jotta voidaan ratkoa niitä yhdessä.) Asensin Debian 13 Live - tikulle, koska Virtuaalikone ei toiminut koneellani. 
@@ -108,6 +109,7 @@ Tämä oli ensimmäinen ajokerta, joten Salt: Loi ryhmän saltgroup Asetti sille
 <img width="508" height="470" alt="Image" src="https://github.com/user-attachments/assets/d47f0e3c-2413-4d96-a900-011472df8805" />
 
 
+###### 9:02
 
 -----
 Lähdeviitteet
