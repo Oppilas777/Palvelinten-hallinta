@@ -52,5 +52,6 @@ Asenna Debian 13-Trixie virtuaalikoneeseen. (Poikkeuksellisesti tätä alakohtaa
 
 b) Asenna Salt (salt-minion) Linuxille (uuteen virtuaalikoneeseesi).
 
-
+Asennus ei alkuun onnistunut. Ratkaisuksi osottautui 
+<img width="884" height="367" alt="Image" src="https://github.com/user-attachments/assets/5ce152fb-b2d6-496d-88f5-7ec1a78a2107" />
 
