@@ -60,7 +60,7 @@ c) Viisi tärkeintä. Näytä Linuxissa esimerkit viidestä tärkeimmästä Salt
 
 Pkg.installed - Asenna paketti! Ajettiin Komento ```sudo ~/salt-venv/bin/salt-call --local state.single pkg.installed name=vim```
 
-Salt ei asentanut pakettia uudelleen, eikä muuttanut järjestelmää. Ohjelmapalautti onnistuneen tuloksen ilman muutoksia
+Salt ei asentanut pakettia uudelleen, eikä muuttanut järjestelmää. Ohjelma palautti onnistuneen tuloksen ilman muutoksia
 
 <img width="884" height="367" alt="Image" src="https://github.com/user-attachments/assets/a0fa66ef-57b1-41ea-8982-6b6f777aaa67" />
 
