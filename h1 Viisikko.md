@@ -46,10 +46,10 @@ Karvinen 2006: Raportin kirjoittaminen
 - Hyvä raportti toimii myös ohjeistuksen pohjana muille.
 
 ###### 1:31
-Tässä välissä käynnistin koneen surffailin netissä, ja tutustuin uuteen päivitykseen. Linuxin ladattuani tutustuin myös uuteen käyttöjärjestelmään. 
+Alkuun käytin vanhempaa versiota, mutta tämän jäljeen asensin Debian 13.0.1. USB-tikulle, käyttämällä Rufus -ohjelmaa. Latauksen jälkeen tutustuin uuteen järjestelmään, ja pidin taukoa.
 ###### 6:44
 
-Asenna Debian 13-Trixie virtuaalikoneeseen. (Poikkeuksellisesti tätä alakohtaa ei tarvitse raportoida, jos siinä ei ole mitään ongelmia. Mutta jos on ongelmia, sitten täsmällinen raportti, jotta voidaan ratkoa niitä yhdessä.) Asensin Debian 13 Live - tikulle, koska Virtuaalikone ei toiminut koneellani. 
+Asenna Debian 13-Trixie virtuaalikoneeseen. (Poikkeuksellisesti tätä alakohtaa ei tarvitse raportoida, jos siinä ei ole mitään ongelmia. Mutta jos on ongelmia, sitten täsmällinen raportti, jotta voidaan ratkoa niitä yhdessä.) En saanut virtuaalikonetta toimimaan, joten päädyin lataamaan Linuxin - tikulle. 
 
 b) Asenna Salt (salt-minion) Linuxille (uuteen virtuaalikoneeseesi).
 
