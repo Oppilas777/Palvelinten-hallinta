@@ -24,3 +24,7 @@ sudo mkdir -p /srv/salt/Uusi_kansio
 cd /srv/salt/
 sudo mkdir esimerkki
 ls
+
+
+
+https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=basic%20command
