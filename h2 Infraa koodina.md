@@ -87,10 +87,17 @@ c) Viisikko tiedostossa. Tee erilliset esimerkit kustakin viidestä tärkeimmäs
 
 d) Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näistä: package, file, service, user. Tarkista eri ohjelmalla, että lopputulos on oikea. Osoita useammalla ajolla, että sls-tiedostosi on idempotentti.
 
+sudo apt update
+sudo apt install salt-minion
+sudo mkdir -p /srv/salt/Uusi_kansio
+cd /srv/salt/
+sudo mkdir esimerkki
+ls
+
+
+
 ------
 Lähdeviitteet
-
-Debian 2025.Debian 13 "trixie" released. Luettavissa: https://www.debian.org/News/2025/20250809. Luettu: 29.10.2025.
 
 Github 2025. jerebjo/palvelinten-hallinta. Luettavissa: https://github.com/jerebjo/Palvelinten-hallinta/blob/main/h3%20infraa%20koodina.md. Luettu: 29.10.2025.
 
@@ -106,9 +113,7 @@ Karvinen T. 2024. Hello Salt Infra-as-Code. Luettavissa: https://terokarvinen.co
 
 Karvinen T. 2006. Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/. Luettu: 29.10.2025.
 
-Karvinen T. 2018. Salt Quickstart – Salt Stack Master and Slave on Ubuntu LinuxLuettavissa: https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/. Luettu: 29.10.2025.
-
-Karvinen T. 2024. Install Debian on Virtualbox - Updated 2024. Luettavissa: https://terokarvinen.com/2021/install-debian-on-virtualbox/. Luettu: 29.10.2025.
+Karvinen T. 2018. Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux Luettavissa: https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/. Luettu: 29.10.2025.
 
 Karvinen T. 2025. Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/. Luettu: 29.10.2025.
 
@@ -119,15 +124,3 @@ Karvinen T. 2025. Palvelinten Hallinta Configuration Management Systems course -
 Salt-Project 2025. Salt Overview. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml. Luettu: 29.10.2025.
 
 Salt-Project 2025. The Top File. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/top.html. Luettu: 29.10.2025.
-
-
-
-
-
-
-sudo apt update
-sudo apt install salt-minion
-sudo mkdir -p /srv/salt/Uusi_kansio
-cd /srv/salt/
-sudo mkdir esimerkki
-ls
