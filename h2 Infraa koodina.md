@@ -23,13 +23,41 @@ Lopuksi aikavyöhykkeen asentamista, jotta ohjelmat toimivat oikein: ```timedate
 
 ------
 
+###### 21:06
 
+x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
 
+Karvinen 2014: Hello Salt Infra-as-Code:
 
+- Salt mahdollistaa tuhansien kondeiden hallitsemisen. 
+- Salt on konfiguraationhallintajarjestelma.
+- Idempotenssi tarkoittaa sita, etta toimenpiteen uusiminen/toistaminen ei muokkaa lopputulosta. mikali se on jo saavutettu. Tama on tarkeaa Saltin kaytossa.
+    
 
+Salt contributors: Salt overview, kohdat:
 
+Rules of YAML:
 
+- Tieto esitetaan avain: arvo-pareina. Arvot voivat olla eri muodoissa. 
+- Avain ja arvo erotetaan kaksoispisteellä ja yhdellä välilyönnillä.  Esimerkiksi: ```nimi: Joonas```
+- Oikein: ikä: 30 / Väärin: ```ikä:30``` tai ```ikä : 30```
+- Aloita risuaitamerkillä #  Esimerkiksi: ```# Suorita uudelleen```
 
+YAML simple structure:
+
+- YAML sisaltaa kolme peruselementtia. Scalareita, eli yksittaisia arvoja, kuten merkkijona ja numero. Listat, eli avaimet, joita seuraa arvo ```- ```merkilla. Seka sanakirjat. Eli sanakirjat sisaltavat sanakirjoja, mitka sisaltavat arvoja.
+- YAML perustuu lohkorakenteeseen, ja sisennys maarittaa kontekstin.
+- Kaksi valilyontia on standardi, kun kaytetaan sisennysta.
+
+Lists and dictionaries - YAML block structures:
+
+- Kaksi valilyontia riittaa.
+- Kokoelmat, kuten sanakirja tai listat ilmaistaan yhdysmerkillä ja välilyönnillä: - arvo. Esimerkki: ```- Appelsiini```
+- Ala kayta sarkaimia, kuten oppitunnilla neuvottiin!
+
+###### 21:43 
+Tauko
+######
 
 
 
@@ -50,6 +78,8 @@ Github 2025. Oppilas777/linux-course. Luettavissa: https://github.com/Oppilas777
 Github 2025. Oppilas777/linux-course. Luettavissa: https://github.com/Oppilas777/linux-course/blob/main/h6.md. Luettu: 29.10.2025.
 
 Karvinen T. 2022. Comman line Basics revisted Luettavissa: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=basic%20command. Luettu: 29.10.2025
+
+Karvinen T. 2024. Hello Salt Infra-as-Code. Luettavissa: https://terokarvinen.com/2024/hello-salt-infra-as-code/. Luettu: 29.10.2025.
 
 Karvinen T. 2006. Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/. Luettu: 29.10.2025.
 
