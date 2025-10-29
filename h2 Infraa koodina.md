@@ -57,14 +57,33 @@ Lists and dictionaries - YAML block structures:
 
 ###### 21:43 
 Tauko
-###### 22:00 
+###### 22:17
+
+alt contributors: Salt overview, kohdat:
+
+Introduction:
+
+- Jarjestelmanvalvojan maarittaa roolit koneiden ryhmille, jotta hallinta olisi helpompaa.
+- ```top.sls``` sijaitsee aina hakemistopuun ylimmassa osassa.
+- Yhdessa koneet muodostavat sovellupinot. Eng. Application stacks, joka tarkoittaa jarstelmaa mika on ik''n kuin kerroksittain rakennettu jarjestelma, jossa jokaisella on oma tehtava.
 
 
+A basic example:
 
+- Ymparisto on se, joka sisaltaa tilatiedot konfigurointiin.
+- Koneista muodostettu ryhma, on kohde, johon tietty joukko tiloja sovelletaan.
+- State Files on luettelo tiedostoista. Nama maarittaat ja valvovat konfiguraatiota.
 
+-----
+###### 23:59 
 
+a) Hei infrakoodi! Kokeile paikallisesti (esim 'sudo salt-call --local') infraa koodina. Kirjota sls-tiedosto, joka tekee esimerkkitiedoston /tmp/ -kansioon.
 
+b) Toppping. Tee top-file, niin että kaikki omat tilasi ajetaan kerralla komennolla 'sudo salt-call --local state.apply'.
 
+c) Viisikko tiedostossa. Tee erilliset esimerkit kustakin viidestä tärkeimmästä tilafunktiosta pkg, file, service, user, cmd. Kirjoita esimerkit omiksi tiloikseen /srv/salt/ alle, esim /srv/salt/hellopkg/init.sls.
+
+d) Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näistä: package, file, service, user. Tarkista eri ohjelmalla, että lopputulos on oikea. Osoita useammalla ajolla, että sls-tiedostosi on idempotentti.
 
 ------
 Lähdeviitteet
