@@ -21,7 +21,7 @@ Aloitan syöttämällä tutut komennot, kuten: ```sudo apt-get update ``` ``` su
 Lopuksi aikavyöhykkeen asentamista, jotta ohjelmat toimivat oikein: ```timedatectl status``` ```timedatectl list-timezones``` ``` susudo timedatectl set-time 2025-10-28 10:30:00 ```
 ```timedatectl ```
 
-
+------
 
 
 
@@ -42,6 +42,8 @@ Lähdeviitteet
 Debian 2025.Debian 13 "trixie" released. Luettavissa: https://www.debian.org/News/2025/20250809. Luettu: 29.10.2025.
 
 Github 2025. jerebjo/palvelinten-hallinta. Luettavissa: https://github.com/jerebjo/Palvelinten-hallinta/blob/main/h3%20infraa%20koodina.md. Luettu: 29.10.2025.
+
+Github 2025. Oppilas777/Linux-course. Luettavissa: https://github.com/Oppilas777/linux-course/blob/main/h7.md. Luettu: 29.10.2025.
 
 Github 2025. Oppilas777/linux-course. Luettavissa: https://github.com/Oppilas777/linux-course. Luettu: 29.10.2025.
 
