@@ -41,7 +41,7 @@ Lähdeviitteet
 
 Debian 2025.Debian 13 "trixie" released. Luettavissa: https://www.debian.org/News/2025/20250809. Luettu: 29.10.2025.
 
-Github 2025. jerebjo/palvelinten-hallinta. Luettavissa: https://github.com/jerebjo/Palvelinten-hallinta/blob/main/H1%20viisikko.md. Luettu: 29.10.2025.
+Github 2025. jerebjo/palvelinten-hallinta. Luettavissa: https://github.com/jerebjo/Palvelinten-hallinta/blob/main/h3%20infraa%20koodina.md. Luettu: 29.10.2025.
 
 Github 2025. Oppilas777/linux-course. Luettavissa: https://github.com/Oppilas777/linux-course. Luettu: 29.10.2025.
 
