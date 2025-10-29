@@ -59,7 +59,7 @@ Lists and dictionaries - YAML block structures:
 Tauko
 ###### 22:17
 
-alt contributors: Salt overview, kohdat:
+Salt contributors: Salt overview, kohdat:
 
 Introduction:
 
@@ -74,8 +74,10 @@ A basic example:
 - Koneista muodostettu ryhma, on kohde, johon tietty joukko tiloja sovelletaan.
 - State Files on luettelo tiedostoista. Nama maarittaat ja valvovat konfiguraatiota.
 
------
 ###### 23:59 
+
+-----
+
 
 a) Hei infrakoodi! Kokeile paikallisesti (esim 'sudo salt-call --local') infraa koodina. Kirjota sls-tiedosto, joka tekee esimerkkitiedoston /tmp/ -kansioon.
 
