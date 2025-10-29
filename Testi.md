@@ -1,5 +1,8 @@
 Soitto kotiin
 ===
+###### 29.10.2025
+###### 20:51
+
 Järjestelmä:
 
 Järjestelmän malli: Aspire E5-573G
