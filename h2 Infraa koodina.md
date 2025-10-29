@@ -74,7 +74,7 @@ A basic example:
 - Koneista muodostettu ryhma, on kohde, johon tietty joukko tiloja sovelletaan.
 - State Files on luettelo tiedostoista. Nama maarittaat ja valvovat konfiguraatiota.
 
-###### 23:59 
+###### 22:59 
 
 -----
 
@@ -115,6 +115,10 @@ Karvinen T. 2025. Run Salt Command Locally. Luettavissa: https://terokarvinen.co
 Karvinen T. 2025. Install Salt on Debian 13 Trixie. Luettavissa: https://terokarvinen.com/install-salt-on-debian-13-trixie/. Luettu: 29.10.2025.
 
 Karvinen T. 2025. Palvelinten Hallinta Configuration Management Systems course - 2025 spring Luettavissa: https://terokarvinen.com/palvelinten-hallinta/#laksyt. Luettu: 29.10.2025.
+
+Salt-Project 2025. Salt Overview. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml. Luettu: 29.10.2025.
+
+Salt-Project 2025. The Top File. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/top.html. Luettu: 29.10.2025.
 
 
 
