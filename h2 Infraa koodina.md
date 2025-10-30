@@ -110,6 +110,7 @@ Lisaan Nanoon tiedot seuraavanlaisesti: ```create_example_file:
     - group: root```
 
 <img width="738" height="548" alt="Image" src="https://github.com/user-attachments/assets/24f9c4ed-28a1-4d9b-bf2c-63b9579b0051" />
+
 Kuvasta voidaan nahda, etta tiedoston lisaaminen on suoritettu onnistuneesti.
 
 b) Toppping. Tee top-file, niin että kaikki omat tilasi ajetaan kerralla komennolla 'sudo salt-call --local state.apply'.
