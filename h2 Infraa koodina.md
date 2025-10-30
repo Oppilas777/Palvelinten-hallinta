@@ -82,8 +82,6 @@ A basic example:
 
 Jatkan tehtavien tyostamista. Tahan mennessa olen suorittanut kaikki peruskomennot, kuten ```sudo apt-get update```
 
------
-
 
 a) Hei infrakoodi! Kokeile paikallisesti (esim 'sudo salt-call --local') infraa koodina. Kirjota sls-tiedosto, joka tekee esimerkkitiedoston /tmp/ -kansioon.
 
