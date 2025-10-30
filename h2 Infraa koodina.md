@@ -105,8 +105,8 @@ ls
 
 
 ------
-Lähdeviitteet
-
+Lahteet
+===
 Github 2025. jerebjo/palvelinten-hallinta. Luettavissa: https://github.com/jerebjo/Palvelinten-hallinta/blob/main/h3%20infraa%20koodina.md. Luettu: 29.10.2025.
 
 Github 2025. Oppilas777/Linux-course. Luettavissa: https://github.com/Oppilas777/linux-course/blob/main/h7.md. Luettu: 29.10.2025.
