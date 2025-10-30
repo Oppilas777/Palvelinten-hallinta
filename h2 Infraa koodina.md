@@ -74,7 +74,10 @@ A basic example:
 - Koneista muodostettu ryhma, on kohde, johon tietty joukko tiloja sovelletaan.
 - State Files on luettelo tiedostoista. Nama maarittaat ja valvovat konfiguraatiota.
 
-###### 22:59 
+###### 22:59  
+###### 6:38
+
+Jatkan tehtavien tyostamista.
 
 -----
 
