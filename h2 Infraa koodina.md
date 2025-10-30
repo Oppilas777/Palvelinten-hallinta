@@ -75,6 +75,9 @@ A basic example:
 - State Files on luettelo tiedostoista. Nama maarittaat ja valvovat konfiguraatiota.
 
 ###### 22:59  
+
+###### 30.10.2025.
+
 ###### 6:38
 
 Jatkan tehtavien tyostamista. Tahan mennessa olen suorittanut kaikki peruskomennot, kuten ```sudo apt-get update```
