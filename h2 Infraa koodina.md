@@ -136,8 +136,15 @@ Top-Filen sisalto saadaan:
 ```sudo salt-call --local state.show_top```
 
 
+Lopuksi esimerkki, jonka syotin Nanoon:
 
-
+base:
+  '*':
+    - hellotero
+    - hellojoonas
+    - hellopetteri
+    - hellopkg
+    - apache
 
 
 <img width="741" height="660" alt="Image" src="https://github.com/user-attachments/assets/a5617786-379e-4376-82d9-a385e112a8cf" />
