@@ -113,6 +113,8 @@ Lisaan Nanoon tiedot seuraavanlaisesti: ```create_example_file:
 
 Kuvasta voidaan nahda, etta tiedoston lisaaminen on suoritettu onnistuneesti.
 
+###### 7:22 
+
 b) Toppping. Tee top-file, niin että kaikki omat tilasi ajetaan kerralla komennolla 'sudo salt-call --local state.apply'.
 
 c) Viisikko tiedostossa. Tee erilliset esimerkit kustakin viidestä tärkeimmästä tilafunktiosta pkg, file, service, user, cmd. Kirjoita esimerkit omiksi tiloikseen /srv/salt/ alle, esim /srv/salt/hellopkg/init.sls.
