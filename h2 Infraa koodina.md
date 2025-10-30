@@ -201,6 +201,7 @@ Suoritan taman seuraavanlaisesti:
 ```sudo salt-call --local state.apply```
 
 
+<img width="736" height="750" alt="Image" src="https://github.com/user-attachments/assets/6991428c-7148-4dcb-ab21-fa6f723ef98b" />
 
 ------
 Lahteet
