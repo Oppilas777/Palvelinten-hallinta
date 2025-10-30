@@ -109,6 +109,8 @@ Lisaan Nanoon tiedot seuraavanlaisesti: ```create_example_file:
     - user: root
     - group: root```
 
+Ajetaan lopuksi tehtanannon mukaisesti: ``` sudo salt-call --local state.apply``` 
+
 <img width="738" height="548" alt="Image" src="https://github.com/user-attachments/assets/24f9c4ed-28a1-4d9b-bf2c-63b9579b0051" />
 
 Kuvasta voidaan nahda, etta tiedoston lisaaminen on suoritettu onnistuneesti.
@@ -154,6 +156,28 @@ Lopuksi nahdaan, etta idempotentti toimii!
 ###### 7:53 
 
 c) Viisikko tiedostossa. Tee erilliset esimerkit kustakin viidestä tärkeimmästä tilafunktiosta pkg, file, service, user, cmd. Kirjoita esimerkit omiksi tiloikseen /srv/salt/ alle, esim /srv/salt/hellopkg/init.sls.
+
+Luon kansiot: ```# Luo kansiot
+sudo mkdir -p /srv/salt/{hellopkg,hellofile,helloservice,hellouser,hellocmd}```
+
+Taman jalkeen sisaltoa jokaisen sls.tiedostoon.
+
+Luon tiedostot, ja syotan komennon: ```sudo salt-call --local state.apply```
+
+<img width="779" height="340" alt="Image" src="https://github.com/user-attachments/assets/8824bbb1-18d0-4a8e-bdfe-4d09c2b14ad1" />
+
+Nayttaisi silta, etta toimii!
+
+Lopuksi lataan tree -ohjelman, komennolla: 
+
+sudo apt-get update 
+sudo apt-get install tree
+tree /srv/salt
+
+<img width="737" height="480" alt="Image" src="https://github.com/user-attachments/assets/45a9d296-abcd-4e86-91be-80d448171e62" />
+
+###### 8:23 
+
 
 d) Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näistä: package, file, service, user. Tarkista eri ohjelmalla, että lopputulos on oikea. Osoita useammalla ajolla, että sls-tiedostosi on idempotentti.
 
