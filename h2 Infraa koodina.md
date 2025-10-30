@@ -184,26 +184,23 @@ Lopuksi lataan tree -ohjelman, komennolla:
 
 d) Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näistä: package, file, service, user. Tarkista eri ohjelmalla, että lopputulos on oikea. Osoita useammalla ajolla, että sls-tiedostosi on idempotentti.
 
-Suoritan taman seuraavanlaisesti:
+Suoritan komennot seuraavanlaisesti:
 
-```cd /srv/salt```
-
-```sudo mkdir -p /srv/salt/hellojoonas```
-
-```cd /srv/salt/hellojoonas```
-
-```sudo nano init.sls```
-
-```sudo nano /srv/salt/top.sls```
-
-```sudo salt-call --local state.apply```
-
-```sudo salt-call --local state.apply```
+cd /srv/salt
+sudo mkdir -p /srv/salt
+sudo mkdir -p /srv/salt/hellotila
+cd /srv/salt/hellotila
+sudo nano init.sls
 
 
-<img width="736" height="750" alt="Image" src="https://github.com/user-attachments/assets/6991428c-7148-4dcb-ab21-fa6f723ef98b" />
+<img width="742" height="648" alt="Image" src="https://github.com/user-attachments/assets/64e51b74-7f5b-4ca7-bb89-2f5c28ccba1a" />
 
-Lopullinen nakyma.
+Kaikki nayttaisi olevan OK!
+
+###### 8:57 
+Lopuksi viimeistelen raportin viimeistelya ennen palautusta.
+######
+
 
 ------
 Lahteet
