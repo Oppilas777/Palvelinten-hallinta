@@ -170,9 +170,12 @@ Nayttaisi silta, etta toimii!
 
 Lopuksi lataan tree -ohjelman, komennolla: 
 
-sudo apt-get update 
-sudo apt-get install tree
-tree /srv/salt
+```sudo apt-get update```
+ 
+```sudo apt-get install tree```
+
+```tree /srv/salt```
+
 
 <img width="737" height="480" alt="Image" src="https://github.com/user-attachments/assets/45a9d296-abcd-4e86-91be-80d448171e62" />
 
