@@ -77,7 +77,7 @@ A basic example:
 ###### 22:59  
 ###### 6:38
 
-Jatkan tehtavien tyostamista.
+Jatkan tehtavien tyostamista. Tahan mennessa olen suorittanut kaikki peruskomennot, kuten ```sudo apt-get update```
 
 -----
 
