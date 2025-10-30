@@ -63,7 +63,7 @@ Salt contributors: Salt overview, kohdat:
 
 Introduction:
 
-- JJärjestelmänvalvoja tulee määrittää roolit koneiden ryhmille, jotta hallinta on helpompaa.
+- Järjestelmänvalvoja tulee määrittää roolit koneiden ryhmille, jotta hallinta on helpompaa.
 - ```top.sls``` sijaitsee aina hakemistopuun ylimmässä osassa.
 - Yhdessä koneet muodostavat sovellupinot. Eng. Application stacks, joka tarkoittaa järjestelmää mikä on ikään kuin kerroksittain rakennettu järjestelmä, jossa jokaisella on oma tehtävä.
 
@@ -160,7 +160,7 @@ c) Viisikko tiedostossa. Tee erilliset esimerkit kustakin viidestä tärkeimmäs
 Luon kansiot: ```# Luo kansiot
 sudo mkdir -p /srv/salt/{hellopkg,hellofile,helloservice,hellouser,hellocmd}```
 
-Taman jälkeen lisään sisältöä jokaiseen sls.tiedostoon.
+Tämän jälkeen lisään sisältöä jokaiseen sls.tiedostoon.
 
 Luon tiedostot syöttämällä kommennon: ```sudo salt-call --local state.apply```
 
@@ -205,7 +205,7 @@ Raportin viimeistelyä, ennen palautusta.
 ------
 Lähteet
 ===
-Github 2025. jerebjo/palvelinten-hallinta. Luettavissa: https://github.com/jerebjo/Palvelinten-hallinta/blob/main/h3%20infraa%20koodina.md. Luettu: 29.10.2025.
+Github 2025. jerebjo/palvelinten-hallinta. Luettavissa: https://github.com/jerebjo/Palvelinten-hallinta/blob/main/h3%20infraa%20koodina.md. Luettu: 30.10.2025.
 
 Github 2025. Oppilas777/Linux-course. Luettavissa: https://github.com/Oppilas777/linux-course/blob/main/h7.md. Luettu: 29.10.2025.
 
