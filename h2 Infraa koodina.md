@@ -184,12 +184,21 @@ Lopuksi lataan tree -ohjelman, komennolla:
 
 d) Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näistä: package, file, service, user. Tarkista eri ohjelmalla, että lopputulos on oikea. Osoita useammalla ajolla, että sls-tiedostosi on idempotentti.
 
-sudo apt update
-sudo apt install salt-minion
-sudo mkdir -p /srv/salt/Uusi_kansio
-cd /srv/salt/
-sudo mkdir esimerkki
-ls
+Suoritan taman seuraavanlaisesti:
+
+```cd /srv/salt```
+
+```sudo mkdir -p /srv/salt/hellojoonas```
+
+```cd /srv/salt/hellojoonas```
+
+```sudo nano init.sls```
+
+```sudo nano /srv/salt/top.sls```
+
+```sudo salt-call --local state.apply```
+
+```sudo salt-call --local state.apply```
 
 
 
