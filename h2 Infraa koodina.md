@@ -102,7 +102,7 @@ sudo nano /srv/salt/hellojoonas/init.sls```
 
 Lisaan Nanoon tiedot seuraavanlaisesti: ```create_example_file:
   file.managed:
-    - name: /tmp/joonas.txt
+    - name: /tmp/joonas.txtUpdate
     - contents: |
         Moi Joonas! Tämä tiedosto luotiin Saltilla.
     - mode: '644'
@@ -202,6 +202,8 @@ Suoritan taman seuraavanlaisesti:
 
 
 <img width="736" height="750" alt="Image" src="https://github.com/user-attachments/assets/6991428c-7148-4dcb-ab21-fa6f723ef98b" />
+
+Lopullinen nakyma.
 
 ------
 Lahteet
