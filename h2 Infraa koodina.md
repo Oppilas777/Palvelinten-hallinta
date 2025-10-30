@@ -117,6 +117,27 @@ Kuvasta voidaan nahda, etta tiedoston lisaaminen on suoritettu onnistuneesti.
 
 b) Toppping. Tee top-file, niin että kaikki omat tilasi ajetaan kerralla komennolla 'sudo salt-call --local state.apply'.
 
+Luodaan tilakansio ja tiedosto: 
+
+```sudo mkdir -p /srv/salt/hellotero```
+```sudo nano /srv/salt/hellotero/init.sls```
+
+Muokkaus Nanolla:
+
+```sudo nano /srv/salt/top.sls```
+
+
+Ajan kaikki tiedostot, komennolla:
+
+```sudo salt-call --local state.apply```
+
+Top-Filen sisalto saadaan:
+
+```sudo salt-call --local state.show_top```
+
+
+
+
 
 
 <img width="741" height="660" alt="Image" src="https://github.com/user-attachments/assets/a5617786-379e-4376-82d9-a385e112a8cf" />
