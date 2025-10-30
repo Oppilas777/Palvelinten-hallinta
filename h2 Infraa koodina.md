@@ -149,6 +149,10 @@ base:
 
 <img width="741" height="660" alt="Image" src="https://github.com/user-attachments/assets/a5617786-379e-4376-82d9-a385e112a8cf" />
 
+Lopuksi nahdaan, etta idempotentti toimii!
+
+###### 7:53 
+
 c) Viisikko tiedostossa. Tee erilliset esimerkit kustakin viidestä tärkeimmästä tilafunktiosta pkg, file, service, user, cmd. Kirjoita esimerkit omiksi tiloikseen /srv/salt/ alle, esim /srv/salt/hellopkg/init.sls.
 
 d) Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näistä: package, file, service, user. Tarkista eri ohjelmalla, että lopputulos on oikea. Osoita useammalla ajolla, että sls-tiedostosi on idempotentti.
