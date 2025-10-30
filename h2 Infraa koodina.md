@@ -30,30 +30,30 @@ x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokon
 Karvinen 2014: Hello Salt Infra-as-Code:
 
 - Salt mahdollistaa tuhansien kondeiden hallitsemisen. 
-- Salt on konfiguraationhallintajarjestelma.
-- Idempotenssi tarkoittaa sita, etta toimenpiteen uusiminen/toistaminen ei muokkaa lopputulosta. mikali se on jo saavutettu. Tama on tarkeaa Saltin kaytossa.
+- Salt on konfiguraationhallintajarjestelmä.
+- Idempotenssi tarkoittaa sita, etta toimenpiteen uusiminen/toistaminen ei muokkaa lopputulosta, mikali se on jo saavutettu.
     
 
 Salt contributors: Salt overview, kohdat:
 
 Rules of YAML:
 
-- Tieto esitetaan avain: arvo-pareina. Arvot voivat olla eri muodoissa. 
+- Tieto esitetään avain: arvo-pareina. Arvot voivat esiintyä eri muodoissa. 
 - Avain ja arvo erotetaan kaksoispisteellä ja yhdellä välilyönnillä.  Esimerkiksi: ```nimi: Joonas```
 - Oikein: ikä: 30 / Väärin: ```ikä:30``` tai ```ikä : 30```
 - Aloita risuaitamerkillä #  Esimerkiksi: ```# Suorita uudelleen```
 
 YAML simple structure:
 
-- YAML sisaltaa kolme peruselementtia. Scalareita, eli yksittaisia arvoja, kuten merkkijona ja numero. Listat, eli avaimet, joita seuraa arvo ```- ```merkilla. Seka sanakirjat. Eli sanakirjat sisaltavat sanakirjoja, mitka sisaltavat arvoja.
-- YAML perustuu lohkorakenteeseen, ja sisennys maarittaa kontekstin.
-- Kaksi valilyontia on standardi, kun kaytetaan sisennysta.
+- YAML sisaltää kolme peruselementtiä. Scalareita, eli yksittaisiä arvoja, kuten merkkijona ja numero. Listat, eli avaimet, joita seuraa arvo ```- ```merkillä. Sekö sanakirjat.    toisin sanoen: sanakirjat sisaltavat sanakirjoja, mitka sisältävät arvoja.
+- YAML perustuu lohkorakenteeseen, ja sisennys määrittää kontekstin. Muista: kaksi välilyöntiä!
+- Kaksi valilyontiä on standardi, kun käytetään sisennystä.
 
 Lists and dictionaries - YAML block structures:
 
-- Kaksi valilyontia riittaa.
+- Muista sääntö liittyen sisentämisesessä.
 - Kokoelmat, kuten sanakirja tai listat ilmaistaan yhdysmerkillä ja välilyönnillä: - arvo. Esimerkki: ```- Appelsiini```
-- Ala kayta sarkaimia, kuten oppitunnilla neuvottiin!
+- Vältä sarkaimia, kuten oppitunnilla neuvottiin!
 
 ###### 21:43 
 Tauko
@@ -63,16 +63,16 @@ Salt contributors: Salt overview, kohdat:
 
 Introduction:
 
-- Jarjestelmanvalvojan maarittaa roolit koneiden ryhmille, jotta hallinta olisi helpompaa.
-- ```top.sls``` sijaitsee aina hakemistopuun ylimmassa osassa.
-- Yhdessa koneet muodostavat sovellupinot. Eng. Application stacks, joka tarkoittaa jarstelmaa mika on ik''n kuin kerroksittain rakennettu jarjestelma, jossa jokaisella on oma tehtava.
+- JJärjestelmänvalvoja tulee määrittää roolit koneiden ryhmille, jotta hallinta on helpompaa.
+- ```top.sls``` sijaitsee aina hakemistopuun ylimmässä osassa.
+- Yhdessä koneet muodostavat sovellupinot. Eng. Application stacks, joka tarkoittaa järjestelmää mikä on ikään kuin kerroksittain rakennettu järjestelmä, jossa jokaisella on oma tehtävä.
 
 
 A basic example:
 
-- Ymparisto on se, joka sisaltaa tilatiedot konfigurointiin.
-- Koneista muodostettu ryhma, on kohde, johon tietty joukko tiloja sovelletaan.
-- State Files on luettelo tiedostoista. Nama maarittaat ja valvovat konfiguraatiota.
+- Ympäristö - sisältää tilatiedot konfigurointiin.
+- Koneista muodostettu ryhmä, on kohde, johon tietty joukko sovelletaan.
+- State Files on luettelo tiedostoista. Nämä määrittävät, ja valvovat konfiguraatiota.
 
 ###### 22:59  
 
@@ -80,12 +80,12 @@ A basic example:
 
 ###### 6:38
 
-Jatkan tehtavien tyostamista. Tahan mennessa olen suorittanut kaikki peruskomennot, kuten ```sudo apt-get update```
+Jatkan tehtävien työstämistä. Peruskomennot on suoritettu, kuten  ```sudo apt-get update```
 
 
 a) Hei infrakoodi! Kokeile paikallisesti (esim 'sudo salt-call --local') infraa koodina. Kirjota sls-tiedosto, joka tekee esimerkkitiedoston /tmp/ -kansioon.
 
-Debian Trixie ei sisalla Saltia oletuksena, joten Copilotin avustuksella lisaan pakettivaraston, ennen projektia. Suoritan komennon: ```# Luo keyrings-hakemisto
+Debian Trixie ei sisallä Saltia oletuksena, joten tekoälyn avustuksella lisään pakettivaraston, ennen projektia. Suoritan komennon: ```# Luo keyrings-hakemisto
 sudo mkdir -p /etc/apt/keyrings``` 
 
 Lataan Saltin julkinen avain
@@ -93,14 +93,14 @@ Lataan Saltin julkinen avain
 
 Seuraavaksi: ```curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources | sudo tee /etc/apt/sources.list.d/salt.sources``` 
 
-Taman jalkeen paivitys ja Saltin asennusta: ```sudo apt install salt-minion``` ```salt-call --version ``` 
+Päivitys ja Saltin asennusta: ```sudo apt install salt-minion``` ```salt-call --version ``` 
 
-Testaaminen onnistui, eli Salt toimii. 
+Testaaminen onnistui, eli Salt toimii!
 
 Luodaan tarkistuslista: ```sudo mkdir -p /srv/salt/hellojoonas
 sudo nano /srv/salt/hellojoonas/init.sls```
 
-Lisaan Nanoon tiedot seuraavanlaisesti: ```create_example_file:
+Lisätään Nanoon tiedot seuraavanlaisesti: ```create_example_file:
   file.managed:
     - name: /tmp/joonas.txtUpdate
     - contents: |
@@ -109,11 +109,11 @@ Lisaan Nanoon tiedot seuraavanlaisesti: ```create_example_file:
     - user: root
     - group: root```
 
-Ajetaan lopuksi tehtanannon mukaisesti: ``` sudo salt-call --local state.apply``` 
+Ajetaan lopuksi tehtävänannon mukaisesti: ``` sudo salt-call --local state.apply``` 
 
 <img width="738" height="548" alt="Image" src="https://github.com/user-attachments/assets/24f9c4ed-28a1-4d9b-bf2c-63b9579b0051" />
 
-Kuvasta voidaan nahda, etta tiedoston lisaaminen on suoritettu onnistuneesti.
+Kuvasta voidaan nähdä, etta tiedoston lisääminen on onnistunut.
 
 ###### 7:22 
 
@@ -133,12 +133,12 @@ Ajan kaikki tiedostot, komennolla:
 
 ```sudo salt-call --local state.apply```
 
-Top-Filen sisalto saadaan:
+Top-Filen sisaltö saadaan:
 
 ```sudo salt-call --local state.show_top```
 
 
-Lopuksi esimerkki, jonka syotin Nanoon:
+Lopuksi esimerkki, jonka syötin Nanoon:
 
 base:
   '*':
@@ -151,7 +151,7 @@ base:
 
 <img width="741" height="660" alt="Image" src="https://github.com/user-attachments/assets/a5617786-379e-4376-82d9-a385e112a8cf" />
 
-Lopuksi nahdaan, etta idempotentti toimii!
+Lopuksi nahdään, että idempotentti toimii!
 
 ###### 7:53 
 
@@ -160,13 +160,13 @@ c) Viisikko tiedostossa. Tee erilliset esimerkit kustakin viidestä tärkeimmäs
 Luon kansiot: ```# Luo kansiot
 sudo mkdir -p /srv/salt/{hellopkg,hellofile,helloservice,hellouser,hellocmd}```
 
-Taman jalkeen sisaltoa jokaisen sls.tiedostoon.
+Taman jälkeen lisään sisältöä jokaiseen sls.tiedostoon.
 
-Luon tiedostot, ja syotan komennon: ```sudo salt-call --local state.apply```
+Luon tiedostot syöttämällä kommennon: ```sudo salt-call --local state.apply```
 
 <img width="779" height="340" alt="Image" src="https://github.com/user-attachments/assets/8824bbb1-18d0-4a8e-bdfe-4d09c2b14ad1" />
 
-Nayttaisi silta, etta toimii!
+Näyttäisi siltä, että toimii!
 
 Lopuksi lataan tree -ohjelman, komennolla: 
 
@@ -186,24 +186,24 @@ d) Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näist
 
 Suoritan komennot seuraavanlaisesti:
 
-cd /srv/salt
-sudo mkdir -p /srv/salt
-sudo mkdir -p /srv/salt/hellotila
-cd /srv/salt/hellotila
-sudo nano init.sls
+```cd /srv/salt```
+```sudo mkdir -p /srv/salt```
+```sudo mkdir -p /srv/salt/hellotila```
+```cd /srv/salt/hellotila```
+```sudo nano init.sls```
 
 
 <img width="742" height="648" alt="Image" src="https://github.com/user-attachments/assets/64e51b74-7f5b-4ca7-bb89-2f5c28ccba1a" />
 
-Kaikki nayttaisi olevan OK!
+Näyttäisi olevan OK!
 
 ###### 8:57 
-Lopuksi viimeistelen raportin viimeistelya ennen palautusta.
-######
+Raportin viimeistelyä, ennen palautusta.
+###### 9:24
 
 
 ------
-Lahteet
+Lähteet
 ===
 Github 2025. jerebjo/palvelinten-hallinta. Luettavissa: https://github.com/jerebjo/Palvelinten-hallinta/blob/main/h3%20infraa%20koodina.md. Luettu: 29.10.2025.
 
