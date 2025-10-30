@@ -86,7 +86,16 @@ Jatkan tehtavien tyostamista. Tahan mennessa olen suorittanut kaikki peruskomenn
 a) Hei infrakoodi! Kokeile paikallisesti (esim 'sudo salt-call --local') infraa koodina. Kirjota sls-tiedosto, joka tekee esimerkkitiedoston /tmp/ -kansioon.
 
 Debian Trixie ei sisalla Saltia oletuksena, joten Copilotin avustuksella lisaan pakettivaraston, ennen projektia. Suoritan komennon: ```# Luo keyrings-hakemisto
-sudo mkdir -p /etc/apt/keyrings``` Seuraavaksi: ```curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources | sudo tee /etc/apt/sources.list.d/salt.sources``` Taman jalkeen paivitys ja Saltin asennusta: ```sudo apt install salt-minion``` ```salt-call --version ``` Testaaminen onnistui, eli Salt toimii. 
+sudo mkdir -p /etc/apt/keyrings``` 
+
+Lataan Saltin julkinen avain
+```curl -fsSL https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public | sudo tee /etc/apt/keyrings/salt-archive-keyring.pgp```
+
+Seuraavaksi: ```curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources | sudo tee /etc/apt/sources.list.d/salt.sources``` 
+
+Taman jalkeen paivitys ja Saltin asennusta: ```sudo apt install salt-minion``` ```salt-call --version ``` 
+
+Testaaminen onnistui, eli Salt toimii. 
 
 Luodaan tarkistuslista: ```sudo mkdir -p /srv/salt/hellojoonas
 sudo nano /srv/salt/hellojoonas/init.sls```
@@ -99,22 +108,6 @@ Lisaan Nanoon tiedot seuraavanlaisesti: ```create_example_file:
     - mode: '644'
     - user: root
     - group: root```
-
-
-
-
-
-
-# Lataa Saltin julkinen avain
-curl -fsSL https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public | sudo tee /etc/apt/keyrings/salt-archive-keyring.pgp
-
-# Lataa Saltin julkinen avain
-curl -fsSL https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public | sudo tee /etc/apt/keyrings/salt-archive-keyring.pgp
-
-
-# Lataa Saltin julkinen avain
-curl -fsSL https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public | sudo tee /etc/apt/keyrings/salt-archive-keyring.pgp
-
 
 
 b) Toppping. Tee top-file, niin että kaikki omat tilasi ajetaan kerralla komennolla 'sudo salt-call --local state.apply'.
