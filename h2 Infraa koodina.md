@@ -20,8 +20,8 @@ Debian 13 (trixie)
 -----
 
 Aloitan syöttämällä tutut komennot, kuten: ```sudo apt-get update ``` ``` sudo apt-get -y dist-upgrade ``` ``` sudo apt-get -y install ufw ``` ```sudo ufw enable ```  
-Lopuksi aikavyöhykkeen asentamista, jotta ohjelmat toimivat oikein: ```timedatectl status``` ```timedatectl list-timezones``` ``` susudo timedatectl set-time 2025-10-28 10:30:00 ```
-```timedatectl ```
+Lopuksi aikavyöhykkeen asentamista, jotta ohjelmat toimivat oikein: ```timedatectl status``` ```timedatectl list-timezones``` ``` sudo timedatectl set-time 2025-10-28 10:30:00 ```
+```timedatectl ``` (muokattu 4.11.2025)
 
 ------
 
