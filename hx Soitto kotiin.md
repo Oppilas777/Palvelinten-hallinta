@@ -63,7 +63,11 @@ Infra as Code - Your wishes as a text file:
 
 top.sls - What Slave Runs What States:
 
-- 
+- Top.sls määrittää, mitkä tilat (states) ajetaan mille minioneille.
+- Käytetään, jotta ei tarvitse erikseen nimetä state-moduuleja komentorivillä.
+- Maarita: ```sudo salt '*' state.apply```
+- Yaml sisalto esimerkkina: ```base: '*':- hello``` Muista valilyonnit naissa!
+
 
 
 
