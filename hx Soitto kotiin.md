@@ -73,6 +73,18 @@ top.sls - What Slave Runs What States:
 Tauko
 ###### 
 
+a) Hello Vagrant! Osoita jollain komennolla, että Vagrant on asennettu (esim tulostaa vagrantin versionumeron). Jos et ole vielä asentanut niitä, raportoi myös Vagrant ja VirtualBox asennukset. (Jos Vagrant ja VirtualBox on jo asennettu, niiden asennusta ei tarvitse tehdä eikä raportoida uudelleen.):
+
+Minulla ei ollut naita ladattuna, niin aloitin komennolla: ```sudo apt install vagrant``` Minka jalkeen: ```vagrant --version```
+
+VirtualBox ei ollut saatavilla, joten latasin Libvirtin, komennolla:  ```sudo apt update ```
+
+ ```sudo apt install libvirt-daemon-system libvirt-clients qemu-kvm vagrant-libvirt ```
+
+ Palvelun kayttoon ottaminen ja kaynnistaminen tapahtui seuraavanlaisesti: ```sudo systemctl enable --now libvirtd```
+
+
+
 
 
 
