@@ -83,6 +83,10 @@ VirtualBox ei ollut saatavilla, joten latasin Libvirtin, komennolla:  ```sudo ap
 
  Palvelun kayttoon ottaminen ja kaynnistaminen tapahtui seuraavanlaisesti: ```sudo systemctl enable --now libvirtd```
 
+ Asentaminen oli aikaa vieva prosessi, koska tiekoneesta loppui tila, ja jouduin tekemaan kaiken uudestaan, alusta loppuun. \
+
+ 
+
 
 
 
