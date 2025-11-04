@@ -75,7 +75,7 @@ Tauko
 
 a) Hello Vagrant! Osoita jollain komennolla, että Vagrant on asennettu (esim tulostaa vagrantin versionumeron). Jos et ole vielä asentanut niitä, raportoi myös Vagrant ja VirtualBox asennukset. (Jos Vagrant ja VirtualBox on jo asennettu, niiden asennusta ei tarvitse tehdä eikä raportoida uudelleen.):
 
-Minulla ei ollut naita ladattuna, niin aloitin komennolla: ```sudo apt install vagrant``` Minka jalkeen: ```vagrant --version```
+Live-tikulla ei ollut saatavilla valmiina, joten aloitin komennolla: ```sudo apt install vagrant``` Minka jalkeen: ```vagrant --version```
 
 VirtualBox ei ollut saatavilla, joten latasin Libvirtin, komennolla:  ```sudo apt update ```
 
@@ -86,8 +86,9 @@ VirtualBox ei ollut saatavilla, joten latasin Libvirtin, komennolla:  ```sudo ap
  Asentaminen oli aikaa vieva prosessi, koska tiekoneesta loppui tila, ja jouduin tekemaan kaiken uudestaan, alusta loppuun. \
 
  
+<img width="741" height="481" alt="Image" src="https://github.com/user-attachments/assets/71fbfa04-c0f3-4a82-b3a0-f40cd9425194" />
 
-
+Versinumero ja libvrt asennettu!
 
 
 
