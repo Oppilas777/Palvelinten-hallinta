@@ -83,12 +83,22 @@ VirtualBox ei ollut saatavilla, joten latasin Libvirtin, komennolla:  ```sudo ap
 
  Palvelun kayttoon ottaminen ja kaynnistaminen tapahtui seuraavanlaisesti: ```sudo systemctl enable --now libvirtd```
 
- Asentaminen oli aikaa vieva prosessi, koska tiekoneesta loppui tila, ja jouduin tekemaan kaiken uudestaan, alusta loppuun. \
+ Asentaminen oli aikaa vieva prosessi, koska tiekoneesta loppui tila, ja jouduin tekemaan kaiken alusta loppuun, uudelleen
 
  
 <img width="741" height="481" alt="Image" src="https://github.com/user-attachments/assets/71fbfa04-c0f3-4a82-b3a0-f40cd9425194" />
 
 Versinumero ja libvrt asennettu!
+
+
+###### 14:00 
+
+
+b) Linux Vagrant. Tee Vagrantilla uusi Linux-virtuaalikone.
+
+Luodaan uusi hakemisto projektille: ```mkdir vagrant-linux-vm``` ```cd vagrant-linux-vm``` 
+
+Taman jalkeen projektin alustaminen: ```vagrant init generic/debian12```
 
 
 
