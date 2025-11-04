@@ -103,3 +103,5 @@ Karvinen T. 11.4.2021. Two Machine Virtual Network With Debian 11 Bullseye and V
 
 Karvinen T. 28.3. 2018. Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux. Luettavissa: https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux. Luettu: 4.11.2025.
 
+Karvinen T. 28.3. 2023. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file. Luettu: 4.11.2025.
+
