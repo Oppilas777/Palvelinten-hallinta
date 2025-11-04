@@ -41,8 +41,29 @@ Karvinen 2021: Two Machine Virtual Network With Debian 11 Bullseye and Vagrant (
 
 Karvinen 2018: Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux (Huomaa: Nykyisin ennen Saltin asentamista on asennettava ensin varasto [package repository], ohje h1 vinkeissä):
 
+- Mahdollistaa sen, etta voit hallita tuhansia koneita yhdestä master-palvelimesta.
+- Vain masterin tarvitsee olla julkisesti saavutettavissa, ja minionit voivat olla minka tahansa verkon, kuten NATin, palomuurin tai tuntemattoman domainin - takana.
 - Masterin asennus, komennolla: ```sudo apt-get -y install salt-master``` Tarkista IP-osoite: ```hostname -I```
+- Avaimen hyvaksynta: ```sudo salt-key -A```
 
+
+Karvinen 2023: Salt Vagrant - automatically provision one master and two slaves, vain kohdat:
+
+Infra as Code - Your wishes as a text file:
+
+- Mahdollistaa halutun tilan tekstinä YAML-muodossa.
+- Kayta Saltin state-tiedostoja automatisoimaan konfiguraatioita.
+- Luo kansio komennolla: ```sudo mkdir -p /srv/salt/hello``` ja sen jalkeen luo tiedosto: ```udoedit /srv/salt/hello/init.sls```
+- Sisallon luomisessa, muita kaksi valilyontia ja aseta:  ```/tmp/infra-as-code:
+  file.managed ```
+- Lopuksi aja masterilla: Käynnistä tila kaikille minioneille: ```sudo salt '*' state.apply hello```
+- Lopputlous: Tämä luo tiedoston ```/tmp/infra-as-code kaikille minioneille```
+
+
+
+top.sls - What Slave Runs What States:
+
+- 
 
 
 
