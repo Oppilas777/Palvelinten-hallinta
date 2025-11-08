@@ -118,10 +118,19 @@ Vagrantin libvirt-tuki asennus:
 
 Virtuaalikoneen kaynnistaminen librvirtin kautta.
 
+
+
+<img width="739" height="507" alt="Image" src="https://github.com/user-attachments/assets/78da5c19-02be-4e9a-bf84-4c6bc5c8d576" />
+
 Taman jalkeen: ```sudo systemctl restart libvirtd``` oppitunnin ohjeiden mukaisesti. 
 
-<img width="738" height="522" alt="Image" src="https://github.com/user-attachments/assets/a30471dc-7ef4-4e7c-9a21-d5143ab9f030" />
+Kuvan perusteella voidaan olettaa, etta libvirtin palvelu (libvirtd) on nyt aktiivinen ja käynnissä oikein:
 
+    ✅ Active: active (running)
+
+    ✅ dnsmasq-prosessit pyörivät — tämä hoitaa DHCP:n
+
+    ✅ Ei virheilmoituksia
 
 
 
