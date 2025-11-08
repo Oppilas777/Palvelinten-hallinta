@@ -92,18 +92,40 @@ Versinumero ja libvrt asennettu!
 
 
 ###### 14:00 
-
+###### 8.11.2025.
+###### 4:48
 
 
 b) Linux Vagrant. Tee Vagrantilla uusi Linux-virtuaalikone.
+
+Tehtavien tyostaminen jatkuu. Perustoiminnot suoritettu, kuten sudo apt-get update suoritettu.
+
+Live-tikulla asentaminen ei onnistunut tavalliseen tapaan, joten paadyin vaihtoehtoiseen tapaan suorittaa tehtava b. Tama siita syysta, että VirtualBoxin asennus ei onnistunut taysin — komentoa vboxmanage ei löytynyt, eikä vboxconfig ollut saatavilla. Tämä viittaa ehka siihen, että VirtualBoxin ydinkomponentit eivät ole saatavilla, tai ne eivät ole yhteensopivia live-USB-ympäristön kanssa.
+
+Kysyin CoPilotilta apua tassa vaiheessa, joka neuvoi seuraavanlaiset komennot:
+
+KVM ja Libvirtin asennus: 
+
+```sudo apt update```
+
+```sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager```
+
+Vagrantin libvirt-tuki asennus:
+
+```sudo apt install vagrant vagrant-libvirt```
+
+Taman jalkeen: ```sudo systemctl restart libvirtd``` oppitunnin ohjeiden mukaisesti. 
+
+
+
+
+
+
 
 Luodaan uusi hakemisto projektille: ```mkdir vagrant-linux-vm``` ```cd vagrant-linux-vm``` 
 
 Taman jalkeen projektin alustaminen: ```vagrant init generic/debian12```
 
-
-###### 8.11.2025.
-###### 4:48
 
 
 
