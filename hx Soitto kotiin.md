@@ -94,6 +94,7 @@ Versinumero ja libvrt asennettu!
 ###### 14:00 
 
 
+
 b) Linux Vagrant. Tee Vagrantilla uusi Linux-virtuaalikone.
 
 Luodaan uusi hakemisto projektille: ```mkdir vagrant-linux-vm``` ```cd vagrant-linux-vm``` 
@@ -101,7 +102,8 @@ Luodaan uusi hakemisto projektille: ```mkdir vagrant-linux-vm``` ```cd vagrant-l
 Taman jalkeen projektin alustaminen: ```vagrant init generic/debian12```
 
 
-
+###### 8.11.2025.
+###### 4:48
 
 
 
