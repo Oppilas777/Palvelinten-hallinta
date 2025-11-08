@@ -149,6 +149,8 @@ Taman jalkeen projektin alustaminen: ```vagrant init generic/debian12```
 ```sudo apt install vagrant -y```
 
 
+Ongelmaksi muodostui se, etta Live - ymparisto ei suostunut yhdistamaan uuteen Linux koneeseen, joten asensin debianin uudelleen virtuaali koneelle. Rauta on sama, ja debian trixie on asennettuna Oraclen virtuaalikoneeseen. 
+
 
 
 
