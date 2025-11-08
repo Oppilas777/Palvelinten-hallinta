@@ -120,7 +120,7 @@ Virtuaalikoneen kaynnistaminen librvirtin kautta.
 
 Taman jalkeen: ```sudo systemctl restart libvirtd``` oppitunnin ohjeiden mukaisesti. 
 
-<img width="738" height="522" alt="Image" src="https://github.com/user-attachments/assets/27b99b62-41a9-468f-b7b0-823c9bc2e334" />
+<img width="738" height="522" alt="Image" src="https://github.com/user-attachments/assets/a30471dc-7ef4-4e7c-9a21-d5143ab9f030" />
 
 
 
