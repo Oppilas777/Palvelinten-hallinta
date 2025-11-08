@@ -114,6 +114,9 @@ Vagrantin libvirt-tuki asennus:
 
 ```sudo apt install vagrant vagrant-libvirt```
 
+<img width="738" height="522" alt="Image" src="https://github.com/user-attachments/assets/3001c8ae-e030-49a7-86ce-60f78630693b" />
+Virtuaalikoneen kaynnistaminen librvirtin kautta.
+
 Taman jalkeen: ```sudo systemctl restart libvirtd``` oppitunnin ohjeiden mukaisesti. 
 
 
