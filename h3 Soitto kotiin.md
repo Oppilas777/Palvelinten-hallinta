@@ -22,7 +22,7 @@ Debian 13 (trixie)
 -----
 
 Aloitan syöttämällä tutut komennot, kuten: ```sudo apt-get update ``` ``` sudo apt-get -y dist-upgrade ``` ``` sudo apt-get -y install ufw ``` ```sudo ufw enable ```  
-Lopuksi aikavyöhykkeen asentamista, jotta ohjelmat toimivat oikein: ```timedatectl status``` ```timedatectl list-timezones``` ``` ssudo timedatectl set-timezone Europe/Helsinki``` ```sudo timedatectl set-ntp true```
+Lopuksi aikavyöhykkeen asentamista, jotta ohjelmat toimivat oikein: ```timedatectl status``` ```timedatectl list-timezones``` ``` sudo timedatectl set-timezone Europe/Helsinki``` ```sudo timedatectl set-ntp true```
 
 
 
@@ -150,7 +150,9 @@ Taman jalkeen projektin alustaminen: ```vagrant init generic/debian12```
 ```sudo apt install vagrant -y```
 
 
-Ongelmaksi muodostui se, etta Live - ymparisto ei suostunut yhdistamaan uuteen Linux koneeseen, joten asensin debianin uudelleen virtuaali koneelle. Rauta on sama, ja debian trixie on asennettuna Oraclen virtuaalikoneeseen. 
+Ongelmaksi muodostui se, etta Live - ymparisto ei suostunut yhdistamaan uuteen Linux koneeseen, joten asensin debianin virtuaalisesti koneeseen. Vapautin tilaa koneeseen, ja latasin Microsoft - sivujen kautta puuttuvat paketit, kuten C++.
+
+
 
 
 
