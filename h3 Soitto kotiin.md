@@ -139,14 +139,17 @@ Luodaan uusi hakemisto projektille: ```mkdir vagrant-linux-vm``` ```cd vagrant-l
 
 Taman jalkeen projektin alustaminen: ```vagrant init generic/debian12```
 
-curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+```curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg```
 
-echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
-https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
-sudo tee /etc/apt/sources.list.d/hashicorp.list
+```echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \```
+```https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \```
+```sudo tee /etc/apt/sources.list.d/hashicorp.list```
 
-sudo apt update
-sudo apt install vagrant -y
+```sudo apt update```
+```sudo apt install vagrant -y```
+
+
+
 
 
 
