@@ -36,7 +36,7 @@ x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokon
 
 Karvinen 2021: Two Machine Virtual Network With Debian 11 Bullseye and Vagrant (Huomaa: nykyinen Debian stable on 12-Bookworm, Vagrantissa "debian/bookworm64". Vanhentunutta 11-bullseye:ta ei enää käytetä):
 
-- Vagrant ahdollistaa harjoitella verkottamista ja automaatiota.
+- Vagrant mahdollistaa sen, että sillä voi harjoitella verkottamista ja automaatiota.
 - SSH-yhteydes voidaan suorittaa yhdellä komennolla.
 - Tuhoa koneet: ```vagrant destroy``` Luo: uudelleen: ```vagrant up```
 
@@ -46,7 +46,7 @@ Karvinen 2018: Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux (
 - Mahdollistaa sen, etta voit hallita tuhansia koneita yhdestä master-palvelimesta.
 - Vain masterin tarvitsee olla julkisesti saavutettavissa, ja minionit voivat olla minka tahansa verkon, kuten NATin, palomuurin tai tuntemattoman domainin - takana.
 - Masterin asennus, komennolla: ```sudo apt-get -y install salt-master``` Tarkista IP-osoite: ```hostname -I```
-- Avaimen hyvaksynta: ```sudo salt-key -A```
+- Avaimen hyvaksyntä: ```sudo salt-key -A```
 
 
 Karvinen 2023: Salt Vagrant - automatically provision one master and two slaves, vain kohdat:
@@ -54,12 +54,12 @@ Karvinen 2023: Salt Vagrant - automatically provision one master and two slaves,
 Infra as Code - Your wishes as a text file:
 
 - Mahdollistaa halutun tilan tekstinä YAML-muodossa.
-- Kayta Saltin state-tiedostoja automatisoimaan konfiguraatioita.
-- Luo kansio komennolla: ```sudo mkdir -p /srv/salt/hello``` ja sen jalkeen luo tiedosto: ```udoedit /srv/salt/hello/init.sls```
-- Sisallon luomisessa, muita kaksi valilyontia ja aseta:  ```/tmp/infra-as-code:
+- Kaytä Saltin state-tiedostoja automatisoimaan konfiguraatioita.
+- Luo kansio komennolla: ```sudo mkdir -p /srv/salt/hello``` ja sen jälkeen luo tiedosto: ```udoedit /srv/salt/hello/init.sls```
+- Sisällön luomisessa, muita kaksi valilyontia ja aseta:  ```/tmp/infra-as-code:
   file.managed ```
 - Lopuksi aja masterilla: Käynnistä tila kaikille minioneille: ```sudo salt '*' state.apply hello```
-- Lopputlous: Tämä luo tiedoston ```/tmp/infra-as-code kaikille minioneille```
+- Lopputulos: Tämä luo tiedoston ```/tmp/infra-as-code kaikille minioneille```
 
 
 
@@ -67,8 +67,8 @@ top.sls - What Slave Runs What States:
 
 - Top.sls määrittää, mitkä tilat (states) ajetaan mille minioneille.
 - Käytetään, jotta ei tarvitse erikseen nimetä state-moduuleja komentorivillä.
-- Maarita: ```sudo salt '*' state.apply```
-- Yaml sisalto esimerkkina: ```base: '*':- hello``` Muista valilyonnit naissa!
+- Määrita: ```sudo salt '*' state.apply```
+- Yaml sisalto esimerkkinä: ```base: '*':- hello``` Muista välilyonni kirjoittaessasi näitä!
 
 
 ###### 11:49
@@ -77,15 +77,15 @@ Tauko
 
 a) Hello Vagrant! Osoita jollain komennolla, että Vagrant on asennettu (esim tulostaa vagrantin versionumeron). Jos et ole vielä asentanut niitä, raportoi myös Vagrant ja VirtualBox asennukset. (Jos Vagrant ja VirtualBox on jo asennettu, niiden asennusta ei tarvitse tehdä eikä raportoida uudelleen.):
 
-Live-tikulla ei ollut saatavilla valmiina, joten aloitin komennolla: ```sudo apt install vagrant``` Minka jalkeen: ```vagrant --version```
+Live-tikulla ei ollut saatavilla valmiina, joten aloitin komennolla: ```sudo apt install vagrant``` jonka jälkeen: ```vagrant --version```
 
 VirtualBox ei ollut saatavilla, joten latasin Libvirtin, komennolla:  ```sudo apt update ```
 
  ```sudo apt install libvirt-daemon-system libvirt-clients qemu-kvm vagrant-libvirt ```
 
- Palvelun kayttoon ottaminen ja kaynnistaminen tapahtui seuraavanlaisesti: ```sudo systemctl enable --now libvirtd```
+ Palvelun käyttöön ottaminen ja käynnistäminen tapahtui seuraavanlaisesti: ```sudo systemctl enable --now libvirtd```
 
- Asentaminen oli aikaa vieva prosessi, koska tiekoneesta loppui tila, ja jouduin tekemaan kaiken alusta loppuun, uudelleen
+ Asentaminen oli aikaa vieva prosessi, koska tiekoneesta loppui tila, ja jouduin aloittamaan kaiken alusta.
 
  
 <img width="741" height="481" alt="Image" src="https://github.com/user-attachments/assets/71fbfa04-c0f3-4a82-b3a0-f40cd9425194" />
@@ -100,11 +100,12 @@ Versinumero ja libvrt asennettu!
 
 b) Linux Vagrant. Tee Vagrantilla uusi Linux-virtuaalikone.
 
-Tehtavien tyostaminen jatkuu. Perustoiminnot suoritettu, kuten sudo apt-get update suoritettu.
+Tehtävien työstäminen jatkuu. Perustoiminnot suoritettu, kuten sudo apt-get update suoritettu.
 
-Live-tikulla asentaminen ei onnistunut tavalliseen tapaan, joten paadyin vaihtoehtoiseen tapaan suorittaa tehtava b. Tama siita syysta, että VirtualBoxin asennus ei onnistunut taysin — komentoa vboxmanage ei löytynyt, eikä vboxconfig ollut saatavilla. Tämä viittaa ehka siihen, että VirtualBoxin ydinkomponentit eivät ole saatavilla, tai ne eivät ole yhteensopivia live-USB-ympäristön kanssa.
+Live-tikulla asentaminen ei onnistunut tavalliseen tapaan, joten paadyin vaihtoehtoiseen tapaan suorittaa tehtava b. Täma siitä syystä, että VirtualBoxin asennus ei onnistunut täysin — komentoa vboxmanage ei löytynyt, eikä vboxconfig ollut saatavilla.
 
-Kysyin CoPilotilta apua tassa vaiheessa, joka neuvoi seuraavanlaiset komennot:
+Kysyin CoPilotilta
+
 
 KVM ja Libvirtin asennus: 
 
@@ -124,9 +125,9 @@ Virtuaalikoneen kaynnistaminen librvirtin kautta.
 
 <img width="739" height="507" alt="Image" src="https://github.com/user-attachments/assets/78da5c19-02be-4e9a-bf84-4c6bc5c8d576" />
 
-Taman jalkeen: ```sudo systemctl restart libvirtd``` oppitunnin ohjeiden mukaisesti. 
+Täman jalkeen: ```sudo systemctl restart libvirtd``` oppitunnin ohjeiden mukaisesti. 
 
-Kuvan perusteella voidaan olettaa, etta libvirtin palvelu (libvirtd) on nyt aktiivinen ja käynnissä oikein:
+Kuvan perusteella voidaan olettaa, etta libvirtin palvelu (libvirtd) on nyt aktiivinen ja käynnissä::
 
     ✅ Active: active (running)
 
@@ -139,7 +140,7 @@ Kuvan perusteella voidaan olettaa, etta libvirtin palvelu (libvirtd) on nyt akti
 
 Luodaan uusi hakemisto projektille: ```mkdir vagrant-linux-vm``` ```cd vagrant-linux-vm``` 
 
-Taman jalkeen projektin alustaminen: ```vagrant init generic/debian12```
+Tämän jälkeen projektin alustaminen: ```vagrant init generic/debian12```
 
 ```curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg```
 
@@ -151,7 +152,7 @@ Taman jalkeen projektin alustaminen: ```vagrant init generic/debian12```
 ```sudo apt install vagrant -y```
 
 
-Ongelmaksi muodostui se, etta Live - ymparisto ei suostunut yhdistamaan uuteen Linux koneeseen, joten asensin debianin virtuaalisesti koneeseen. Vapautin tilaa koneeseen, ja latasin Microsoft - sivujen kautta puuttuvat paketit, kuten C++.
+Ongelmaksi muodostui se, että Live - ympäristö ei suostunut yhdistamään uuteen Linux koneeseen, joten asensin debianin virtuaalisesti koneeseen. Vapautin tilaa koneeseen, ja latasin Microsoft - sivujen kautta puuttuvat paketit, kuten C++.
 
 ###### 8.11.2025.
 ###### 10:58 
