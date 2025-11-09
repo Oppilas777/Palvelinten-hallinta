@@ -272,9 +272,14 @@ Tämän jälkeen varmistin, että molemma koneet ovat käytössä:
 <img width="654" height="274" alt="kaksikonetta" src="https://github.com/user-attachments/assets/b566b142-cbed-43a4-9661-5dd0b9ded60b" />
 
 ###### 22:05
+
+
+
 -----
 Lahteet
 ===
+
+Fuentes, A, D 2021. How to install VirtualBox, Vagrant and a Virtual Machine in Windows 10. Katsottavissa: https://www.youtube.com/watch?v=krDU3BtJNpk. Katsottu: 9.11.2025.
 
 Github 2025. Oppilas777/Linux-course. Luettavissa: https://github.com/Oppilas777/linux-course/blob/main/h7.md. Luettu: 4.11.2025.
 
