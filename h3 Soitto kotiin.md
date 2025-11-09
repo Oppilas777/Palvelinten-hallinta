@@ -21,12 +21,13 @@ Debian 13 (trixie)
 
 -----
 
-Aloitan syöttämällä tutut komennot, kuten: ```sudo apt-get update ``` ``` sudo apt-get -y dist-upgrade ``` ``` sudo apt-get -y install ufw ``` ```sudo ufw enable ```  
+Aloitan syöttämällä tutut komennot, kuten: ```sudo apt-get update ``` ```sudo dpkg --configure -a``` ``` sudo apt-get -y dist-upgrade ``` ``` sudo apt-get -y install ufw ``` ```sudo ufw enable ```  
 Lopuksi aikavyöhykkeen asentamista, jotta ohjelmat toimivat oikein: ```timedatectl status``` ```timedatectl list-timezones``` ``` sudo timedatectl set-timezone Europe/Helsinki``` ```sudo timedatectl set-ntp true```
 
 
 
------
+----
+
 
 ###### 11:05 
 
@@ -151,6 +152,52 @@ Taman jalkeen projektin alustaminen: ```vagrant init generic/debian12```
 
 
 Ongelmaksi muodostui se, etta Live - ymparisto ei suostunut yhdistamaan uuteen Linux koneeseen, joten asensin debianin virtuaalisesti koneeseen. Vapautin tilaa koneeseen, ja latasin Microsoft - sivujen kautta puuttuvat paketit, kuten C++.
+
+###### 8.11.2025.
+###### 10:58 
+
+###### 9.11.2025.
+###### 8:21 
+
+Jatkan tehtävän b suorittamista. Ylämainittu esimerkki on jätetty esimerkiksi. Tässä kohdassa ratkaisen ongelman. Kuten edellä mainittu esimerkki osoittaa sen, kuinka tehtävää ei suoriteta onnistuneesti.
+
+b) Linux Vagrant. Tee Vagrantilla uusi Linux-virtuaalikone. 
+
+Varmistan, että Vagrant on asennettu komennolla:
+
+sudo apt update & sudo apt install virtualbox vagrant
+
+Luodaan projektille: 
+
+mkdir ~/vagrant-linux-vm
+cd ~/vagrant-linux-vm
+
+Initilaize Vagrant with a Linux >Box
+
+vagrant init debian/bookworm64
+
+Tässä väliin asensin Ruby and Dev Tools on Debian Trixie
+
+sudo apt update & sudo apt install ruby-full
+
+Tarkastan, että version on päivitetty uusimapaan.
+
+ruby --version
+
+Install Buld toold (for compliing native gems
+
+sudo apt install build-essential
+
+Navigoidaan vagrant.configure
+
+mkdir ~/vagrant-linux-vm
+cd ~/vagrant-linux-vm
+
+initialize vagrant
+vagrant init
+
+nano Vagrantfile
+
 
 
 
