@@ -255,9 +255,13 @@ Virheilmoitus:
 
 <img width="975" height="484" alt="Image" src="https://github.com/user-attachments/assets/9ae7b7cd-8448-406f-96f2-dafeb3a091d7" />
 
+###### 21:01 
+
+Löysin Youtube videon, jonka avulla sain suoritettua b tehtävän. 
+
+https://www.youtube.com/watch?v=krDU3BtJNpk&pp=ygU0aG93IHRvIGluc3RhbGwgdmlydHVhbG94IHZhZ3JhbnQgYW5kIHZpY3R1YWwgbWFjaGluZQ%3D%3D
+
 Virheiden kautta sain toteutettua vagrantilla uuden virtuaalikoneen:
-
-
 
 
 <img width="973" height="718" alt="Vagrant_Valmis_kone" src="https://github.com/user-attachments/assets/cacaf0c2-b838-45b4-bc41-7c4c9f278636" />
@@ -267,7 +271,7 @@ Tämän jälkeen varmistin, että molemma koneet ovat käytössä:
 
 <img width="654" height="274" alt="kaksikonetta" src="https://github.com/user-attachments/assets/b566b142-cbed-43a4-9661-5dd0b9ded60b" />
 
-
+###### 22:05
 -----
 Lahteet
 ===
