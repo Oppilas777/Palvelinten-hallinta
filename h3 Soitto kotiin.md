@@ -149,7 +149,7 @@ En päässyt tästä eteenpäin. Katsoin polun, mutta en saanut pingattua näit�
 
 Pohdinta:
 
-Tämä oli erittäin työteliäs ja vaikea osuus tästä kurssista. En saanut kaikkia tehtäviä suoritettua loppuun, mutta yritystä oli. Laskin, että kaikkineen päivineen lähteiden selaamiseen, ja tehtävien tekemiseen useampi tunti päivästä. Positiivinen asia tässä on se, että ainakin oppii.
+Tämä oli erittäin työteliäs ja vaikea osuus tästä kurssista. En saanut kaikkia tehtäviä valmiiksi, mutta yritystä oli. Ehkä tämä asia selkenee seuraavalla kerralla, kun tarkastetaan kotitehtävät.
 
 -----
 Lähteet
