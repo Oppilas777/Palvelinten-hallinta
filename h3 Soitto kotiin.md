@@ -86,7 +86,20 @@ a) Hello Vagrant! Osoita jollain komennolla, että Vagrant on asennettu (esim tu
 
 b) Linux Vagrant. Tee Vagrantilla uusi Linux-virtuaalikone.
 
+Suoritan Windowsin kautta seuraavat komennot:
 
+
+    mkdir vagrant-kansio
+    cd vagrant-kansio
+    vagrant init debian/bookworm64
+    vagrant up
+    vagrant ssh
+    whoami
+    exit
+    vagrant destroy
+
+
+<img width="460" height="283" alt="Sieppaa1" src="https://github.com/user-attachments/assets/bf4bc3fd-fb63-4245-8326-22df3f0b2d37" />
 
 
 
