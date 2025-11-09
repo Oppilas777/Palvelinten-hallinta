@@ -72,8 +72,9 @@ top.sls - What Slave Runs What States:
 
 
 ###### 11:49
-Tauko
-###### 
+
+###### 9.11.2025.
+###### 22:40
 
 a) Hello Vagrant! Osoita jollain komennolla, että Vagrant on asennettu (esim tulostaa vagrantin versionumeron). Jos et ole vielä asentanut niitä, raportoi myös Vagrant ja VirtualBox asennukset. (Jos Vagrant ja VirtualBox on jo asennettu, niiden asennusta ei tarvitse tehdä eikä raportoida uudelleen.):
 
@@ -81,12 +82,7 @@ a) Hello Vagrant! Osoita jollain komennolla, että Vagrant on asennettu (esim tu
 
 <img width="513" height="197" alt="Sieppaa" src="https://github.com/user-attachments/assets/c3801d5f-f45b-4dab-b7de-f602becee266" />
 
-###### 14:00 
-###### 8.11.2025.
-###### 4:48
-
-
-###### 22:50
+###### 22:56 
 
 b) Linux Vagrant. Tee Vagrantilla uusi Linux-virtuaalikone.
 
