@@ -108,8 +108,9 @@ Lopputulos.
 c) Kaksin kaunihimpi. Tee kahden Linux-tietokoneen verkko Vagrantilla. Osoita, että koneet voivat pingata toisiaan.
 
 
+<img width="938" height="781" alt="Sieppaa5" src="https://github.com/user-attachments/assets/2b40bcb3-e094-464e-a953-379df6282af3" />
 
-<img width="733" height="714" alt="Sieppaa2" src="https://github.com/user-attachments/assets/6aceb241-3b00-4bfa-95a4-de89bc96e08f" />
+
 
 Lisäsin tämän VSCodeen. Osoitteesta: https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/.
 
