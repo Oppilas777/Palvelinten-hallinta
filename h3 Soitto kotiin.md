@@ -139,6 +139,7 @@ exit
 
 vagrant destroy
 
+<img width="566" height="108" alt="Sieppaa3" src="https://github.com/user-attachments/assets/baa9fe78-9b6d-4865-baf2-bf0e4fe94151" />
 
 
 -----
@@ -156,6 +157,8 @@ Github 2025. Oppilas777/linux-course. Luettavissa: https://github.com/Oppilas777
 Github 2025. Oppilas777/Palvelinten-hallinta. Luettavissa: https://github.com/Oppilas777/Palvelinten-hallinta/blob/main/h0%20Hei%20webbi.md. Luettu: 4.11.2025.
 
 Github 2025. Oppilas777/Palvelinten-hallinta. Luettaviss: https://github.com/Oppilas777/Palvelinten-hallinta/blob/main/h2%20Infraa%20koodina.md. Luettu: 4.11.2025.
+
+Github 2024. Thsoin. Luettavissa: https://github.com/thsoini/linux-course/blob/main/H2.md Luettu: 10.11.2025.
 
 Hashicorp. Install Vagrant 2025. Luettavissa: https://developer.hashicorp.com/vagrant/docs/installation. Luettu: 9.11.2025.
 
