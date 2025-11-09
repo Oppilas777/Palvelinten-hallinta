@@ -77,201 +77,21 @@ Tauko
 
 a) Hello Vagrant! Osoita jollain komennolla, että Vagrant on asennettu (esim tulostaa vagrantin versionumeron). Jos et ole vielä asentanut niitä, raportoi myös Vagrant ja VirtualBox asennukset. (Jos Vagrant ja VirtualBox on jo asennettu, niiden asennusta ei tarvitse tehdä eikä raportoida uudelleen.):
 
-Live-tikulla ei ollut saatavilla valmiina, joten aloitin komennolla: ```sudo apt install vagrant``` jonka jälkeen: ```vagrant --version```
 
-VirtualBox ei ollut saatavilla, joten latasin Libvirtin, komennolla:  ```sudo apt update ```
 
- ```sudo apt install libvirt-daemon-system libvirt-clients qemu-kvm vagrant-libvirt ```
-
- Palvelun käyttöön ottaminen ja käynnistäminen tapahtui seuraavanlaisesti: ```sudo systemctl enable --now libvirtd```
-
- Asentaminen oli aikaa vieva prosessi, koska tiekoneesta loppui tila, ja jouduin aloittamaan kaiken alusta.
-
- 
-<img width="741" height="481" alt="Image" src="https://github.com/user-attachments/assets/71fbfa04-c0f3-4a82-b3a0-f40cd9425194" />
-
-Versinumero ja libvrt asennettu!
-
+<img width="513" height="197" alt="Sieppaa" src="https://github.com/user-attachments/assets/c3801d5f-f45b-4dab-b7de-f602becee266" />
 
 ###### 14:00 
 ###### 8.11.2025.
 ###### 4:48
 
 
+###### 22:50
+
 b) Linux Vagrant. Tee Vagrantilla uusi Linux-virtuaalikone.
 
-Tehtävien työstäminen jatkuu. Perustoiminnot suoritettu, kuten sudo apt-get update suoritettu.
 
-Asensin debianin koneelle. Live-tikku ei tue kaikkia toimintoja.
 
-
-KVM ja Libvirtin asennus: 
-
-```sudo apt update```
-
-```sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager```
-
-Vagrantin libvirt-tuki asennus:
-
-```sudo apt install vagrant vagrant-libvirt```
-
-<img width="738" height="522" alt="Image" src="https://github.com/user-attachments/assets/3001c8ae-e030-49a7-86ce-60f78630693b" />
-
-Virtuaalikoneen kaynnistaminen librvirtin kautta.
-
-
-
-<img width="739" height="507" alt="Image" src="https://github.com/user-attachments/assets/78da5c19-02be-4e9a-bf84-4c6bc5c8d576" />
-
-Täman jalkeen: ```sudo systemctl restart libvirtd``` oppitunnin ohjeiden mukaisesti. 
-
-Kuvan perusteella voidaan olettaa, etta libvirtin palvelu (libvirtd) on nyt aktiivinen ja käynnissä::
-
-    ✅ Active: active (running)
-
-    ✅ dnsmasq-prosessit pyörivät — tämä hoitaa DHCP:n
-
-    ✅ Ei virheilmoituksia
-
-
-
-
-Luodaan uusi hakemisto projektille: ```mkdir vagrant-linux-vm``` ```cd vagrant-linux-vm``` 
-
-Tämän jälkeen projektin alustaminen: ```vagrant init generic/debian12```
-
-```curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg```
-
-```echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \```
-```https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \```
-```sudo tee /etc/apt/sources.list.d/hashicorp.list```
-
-```sudo apt update```
-```sudo apt install vagrant -y```
-
-
-Ongelmaksi muodostui se, että Live - ympäristö ei suostunut yhdistamään uuteen Linux koneeseen, joten asensin debianin virtuaalisesti koneeseen. Vapautin tilaa koneeseen, ja latasin Microsoft - sivujen kautta puuttuvat paketit, kuten C++.
-
-###### 8.11.2025.
-###### 10:58 
-
-###### 9.11.2025.
-###### 8:21 
-
-Jatkan tehtävän b suorittamista. Ylämainittu esimerkki on jätetty esimerkiksi. Tässä kohdassa ratkaisen ongelman. Kuten edellä mainittu esimerkki osoittaa sen, kuinka tehtävää ei suoriteta onnistuneesti.
-
-b) Linux Vagrant. Tee Vagrantilla uusi Linux-virtuaalikone. 
-
-Varmistan, että Vagrant on asennettu komennolla:
-
-sudo apt update & sudo apt install virtualbox vagrant
-
-Luodaan projektille: 
-
-mkdir ~/vagrant-linux-vm
-cd ~/vagrant-linux-vm
-
-Initilaize Vagrant with a Linux >Box
-
-vagrant init debian/bookworm64
-
-Tässä väliin asensin Ruby and Dev Tools on Debian Trixie
-
-sudo apt update & sudo apt install ruby-full
-
-Tarkastan, että version on päivitetty uusimapaan.
-
-ruby --version
-
-Install Buld toold (for compliing native gems
-
-sudo apt install build-essential
-
-Navigoidaan vagrant.configure
-
-mkdir ~/vagrant-linux-vm
-cd ~/vagrant-linux-vm
-
-initialize vagrant
-vagrant init
-
-nano Vagrantfile
-
-
-
-
-
-
-This means your CPU does not support virtualization, or it's disabled at the BIOS level. Without VT-x or AMD-V, you cannot run 64-bit VMs in VirtualBox — including debian/bookworm64.
-VT-x Not Available
-
-Ratkaisu:
-
-vagrant init generic/debian9
-vagrant up
-
-config.vm.box = "generic/debian9"
-
-vagrant box add generic/debian9
-vagrant up
-
-nano Vagrantfile paivitan taman
-
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
-
-Vagrant.configure("2") do |config|
-  config.vm.box = "generic/debian9"
-  config.vm.hostname = "trixie-vm"
-  config.vm.network "private_network", type: "dhcp"
-  config.vm.provider "virtualbox" do |vb|
-    vb.memory = "1024"
-    vb.cpus = 2
-  end
-end
-
-vagrant box add generic/debian9
-vagrant up
-
-<img width="737" height="479" alt="Image" src="https://github.com/user-attachments/assets/45f9729f-67fb-462d-9c64-90debce3074c" />
-
-Valitsin 5, eli Virtual Machine
-
-
-<img width="752" height="478" alt="Image" src="https://github.com/user-attachments/assets/e4114411-0951-4260-a178-9be3b674556e" />
-
-
-###### 16:04
-
-
-<img width="743" height="472" alt="Image" src="https://github.com/user-attachments/assets/4a55e811-e0b2-4c2d-be9e-14ffab948d87" />
-
-En onnistunut luomaan uutta virtuaalikonetta vargantilla.
-
-###### 19:17
-
-
-Virheilmoitus: 
-
-<img width="975" height="484" alt="Image" src="https://github.com/user-attachments/assets/9ae7b7cd-8448-406f-96f2-dafeb3a091d7" />
-
-###### 21:01 
-
-Löysin Youtube videon, jonka avulla sain suoritettua b tehtävän. 
-
-https://www.youtube.com/watch?v=krDU3BtJNpk&pp=ygU0aG93IHRvIGluc3RhbGwgdmlydHVhbG94IHZhZ3JhbnQgYW5kIHZpY3R1YWwgbWFjaGluZQ%3D%3D
-
-Virheiden kautta sain toteutettua vagrantilla uuden virtuaalikoneen:
-
-
-<img width="973" height="718" alt="Vagrant_Valmis_kone" src="https://github.com/user-attachments/assets/cacaf0c2-b838-45b4-bc41-7c4c9f278636" />
-
-
-Tämän jälkeen varmistin, että molemma koneet ovat käytössä:
-
-<img width="654" height="274" alt="kaksikonetta" src="https://github.com/user-attachments/assets/b566b142-cbed-43a4-9661-5dd0b9ded60b" />
-
-###### 22:05
 
 
 
