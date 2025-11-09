@@ -147,10 +147,12 @@ vagrant destroy
 
 En päässyt tästä eteenpäin. Katsoin polun, mutta en saanut pingattua näitä kahta konetta. 
 
+Pohdinta:
 
+Tämä oli erittäin työteliäs ja vaikea osuus tästä kurssista. En saanut kaikkia tehtäviä suoritettua loppuun, mutta yritystä oli. Laskin, että kaikkineen päivineen lähteiden selaamiseen, ja tehtävien tekemiseen useampi tunti päivästä. Positiivinen asia tässä on se, että ainakin oppii.
 
 -----
-Lahteet
+Lähteet
 ===
 
 Fuentes, A, D 2021. How to install VirtualBox, Vagrant and a Virtual Machine in Windows 10. Katsottavissa: https://www.youtube.com/watch?v=krDU3BtJNpk. Katsottu: 9.11.2025.
