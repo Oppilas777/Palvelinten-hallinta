@@ -253,9 +253,9 @@ En onnistunut luomaan uutta virtuaalikonetta vargantilla.
 ###### 19:17
 
 
+Virheilmoitus: 
 
-
-
+<img width="975" height="484" alt="Image" src="https://github.com/user-attachments/assets/9ae7b7cd-8448-406f-96f2-dafeb3a091d7" />
 
 
 
