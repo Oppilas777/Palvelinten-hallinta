@@ -180,3 +180,4 @@ Karvinen T. 28.3. 2018. Salt Quickstart – Salt Stack Master and Slave on Ubunt
 
 Karvinen T. 28.3. 2023. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file. Luettu: 4.11.2025.
 
+Linux (DEB) 2025. Salt Install Guide. Luettavissa: https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/linux-deb.html. Luettu: 10.11.2025.
