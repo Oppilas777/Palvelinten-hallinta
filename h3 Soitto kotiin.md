@@ -242,10 +242,14 @@ Valitsin 5, eli Virtual Machine
 <img width="752" height="478" alt="Image" src="https://github.com/user-attachments/assets/e4114411-0951-4260-a178-9be3b674556e" />
 
 
-
+###### 16:04
 
 
 <img width="743" height="472" alt="Image" src="https://github.com/user-attachments/assets/4a55e811-e0b2-4c2d-be9e-14ffab948d87" />
+
+En onnistunut luomaan uutta virtuaalikonetta vargantilla.
+
+###### 19:17
 
 
 
@@ -283,7 +287,7 @@ Karvinen T. 2018. Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linu
 
 Karvinen T. 2025. Palvelinten Hallinta Configuration Management Systems course - 2025 spring Luettavissa: https://terokarvinen.com/palvelinten-hallinta/#laksyt. Luettu: 4.11.2025.
 
-Karvinen T. 11.4.2021. Two Machine Virtual Network With Debian 11 Bullseye and Vagrant. Luettavissa: https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux. Luettu: 4.11.2025.
+Karvinen T. 11.4.2021. Two Machine Virtual Network With Debian 11 Bullseye and Vagrant. Luettavissa: https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/?fromSearch=Two%20Machine%20Virtual%20Network%20With%20Debian%2011%20Bullseye%20and%20Vagrant. Luettu: 4.11.2025.
 
 Karvinen T. 28.3. 2018. Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux. Luettavissa: https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux. Luettu: 4.11.2025.
 
