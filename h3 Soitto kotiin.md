@@ -105,7 +105,39 @@ Lopputulos.
 
 ###### 23:05
 
+c) Kaksin kaunihimpi. Tee kahden Linux-tietokoneen verkko Vagrantilla. Osoita, että koneet voivat pingata toisiaan.
 
+
+
+<img width="733" height="714" alt="Sieppaa2" src="https://github.com/user-attachments/assets/6aceb241-3b00-4bfa-95a4-de89bc96e08f" />
+
+Lisäsin tämän VSCodeen. Osoitteesta: https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/.
+
+Tämän jälkeen luon uudelleen virtuaalikoneen, jotta niitä on kaksi kappaletta.
+
+
+
+cd vagrant-kansio
+
+vagrant init
+
+config.vm.box = "debian/bookworm64" 
+
+Vagrant up
+
+Vagrant ssh t001
+
+ping 192.168.88.102 
+
+exit
+
+Vagrant ssh t002
+
+ping 192.168.88.101
+
+exit
+
+vagrant destroy
 
 
 
