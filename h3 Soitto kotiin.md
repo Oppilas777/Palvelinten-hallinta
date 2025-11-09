@@ -101,6 +101,11 @@ Suoritan Windowsin kautta seuraavat komennot:
 
 <img width="460" height="283" alt="Sieppaa1" src="https://github.com/user-attachments/assets/bf4bc3fd-fb63-4245-8326-22df3f0b2d37" />
 
+Lopputulos.
+
+###### 23:05
+
+
 
 
 
