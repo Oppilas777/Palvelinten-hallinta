@@ -102,9 +102,7 @@ b) Linux Vagrant. Tee Vagrantilla uusi Linux-virtuaalikone.
 
 Tehtävien työstäminen jatkuu. Perustoiminnot suoritettu, kuten sudo apt-get update suoritettu.
 
-Live-tikulla asentaminen ei onnistunut tavalliseen tapaan, joten paadyin vaihtoehtoiseen tapaan suorittaa tehtava b. Täma siitä syystä, että VirtualBoxin asennus ei onnistunut täysin — komentoa vboxmanage ei löytynyt, eikä vboxconfig ollut saatavilla.
-
-Kysyin CoPilotilta
+Asensin debianin koneelle. Live-tikku ei tue kaikkia toimintoja.
 
 
 KVM ja Libvirtin asennus: 
@@ -257,13 +255,17 @@ Virheilmoitus:
 
 <img width="975" height="484" alt="Image" src="https://github.com/user-attachments/assets/9ae7b7cd-8448-406f-96f2-dafeb3a091d7" />
 
+Virheiden kautta sain toteutettua vagrantilla uuden virtuaalikoneen:
 
 
 
 
+<img width="973" height="718" alt="Vagrant_Valmis_kone" src="https://github.com/user-attachments/assets/cacaf0c2-b838-45b4-bc41-7c4c9f278636" />
 
 
+Tämän jälkeen varmistin, että molemma koneet ovat käytössä:
 
+<img width="654" height="274" alt="kaksikonetta" src="https://github.com/user-attachments/assets/b566b142-cbed-43a4-9661-5dd0b9ded60b" />
 
 
 -----
