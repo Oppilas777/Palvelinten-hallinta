@@ -275,6 +275,8 @@ Github 2025. Oppilas777/Palvelinten-hallinta. Luettavissa: https://github.com/Op
 
 Github 2025. Oppilas777/Palvelinten-hallinta. Luettaviss: https://github.com/Oppilas777/Palvelinten-hallinta/blob/main/h2%20Infraa%20koodina.md. Luettu: 4.11.2025.
 
+Hashicorp. Install Vagrant 2025. Luettavissa: https://developer.hashicorp.com/vagrant/docs/installation. Luettu: 9.11.2025.
+
 Karvinen T. 2006. Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/. Luettu: 4.11.2025.
 
 Karvinen T. 2018. Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux Luettavissa: https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/. Luettu: 4.11.2025.
