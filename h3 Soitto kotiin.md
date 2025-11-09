@@ -141,6 +141,12 @@ vagrant destroy
 
 <img width="566" height="108" alt="Sieppaa3" src="https://github.com/user-attachments/assets/baa9fe78-9b6d-4865-baf2-bf0e4fe94151" />
 
+###### 10.11.2025.
+###### 0:07
+
+En päässyt tästä eteenpäin. Katsoin polun, mutta en saanut pingattua näitä kahta konetta. 
+
+
 
 -----
 Lahteet
