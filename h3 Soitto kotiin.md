@@ -203,6 +203,58 @@ nano Vagrantfile
 
 
 
+This means your CPU does not support virtualization, or it's disabled at the BIOS level. Without VT-x or AMD-V, you cannot run 64-bit VMs in VirtualBox — including debian/bookworm64.
+VT-x Not Available
+
+Ratkaisu:
+
+vagrant init generic/debian9
+vagrant up
+
+config.vm.box = "generic/debian9"
+
+vagrant box add generic/debian9
+vagrant up
+
+nano Vagrantfile paivitan taman
+
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "generic/debian9"
+  config.vm.hostname = "trixie-vm"
+  config.vm.network "private_network", type: "dhcp"
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "1024"
+    vb.cpus = 2
+  end
+end
+
+vagrant box add generic/debian9
+vagrant up
+
+<img width="737" height="479" alt="Image" src="https://github.com/user-attachments/assets/45f9729f-67fb-462d-9c64-90debce3074c" />
+
+Valitsin 5, eli Virtual Machine
+
+
+
+
+
+
+
+
+<img width="743" height="472" alt="Image" src="https://github.com/user-attachments/assets/4a55e811-e0b2-4c2d-be9e-14ffab948d87" />
+
+
+
+
+
+
+
+
+
 
 
 
