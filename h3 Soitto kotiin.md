@@ -239,7 +239,7 @@ vagrant up
 Valitsin 5, eli Virtual Machine
 
 
-
+<img width="752" height="478" alt="Image" src="https://github.com/user-attachments/assets/e4114411-0951-4260-a178-9be3b674556e" />
 
 
 
