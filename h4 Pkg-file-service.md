@@ -18,6 +18,10 @@ Oracle Virtualbox
 
 Debian 13 (trixie)
 
+```
+sudo
+```
+
 -----
 
 
