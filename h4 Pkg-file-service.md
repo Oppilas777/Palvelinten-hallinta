@@ -75,9 +75,21 @@ sshd:
      - file: /etc/ssh/sshd_config
 ```
 
+Salt - tilan kaytoon ottaminen tapahtuu seuraavanalisesti:
+```
+sudo salt '*' state.apply sshd
+```
 
-
-
+Testaaminen:
+```
+nc -vz tero.example.com 8888
+Connection to tero.example.com 2002 port [tcp/*] succeeded!
+```
+Vaihtoehtoinen tapa:
+```
+ssh -p 8888 tero@tero.example.com
+tero@tero.example.com's password:
+```
 
 
 
