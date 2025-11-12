@@ -26,7 +26,14 @@ sudo
 
 
 Aloitan syöttämällä tutut komennot, kuten: 
-```sudo apt-get update ``` ```sudo dpkg --configure -a``` ``` sudo apt-get -y dist-upgrade ``` ``` sudo apt-get -y install ufw ``` ```sudo ufw enable ```
+
+```
+sudo apt-get update
+sudo dpkg --configure -a
+sudo apt-get -y dist-upgrade
+sudo apt-get -y install ufw \
+sudo ufw enable 
+```
 
 Lopuksi aikavyöhykkeen asennus, jotta ohjelmat toimivat oikein: ```timedatectl status``` ```timedatectl list-timezones``` ``` sudo timedatectl set-timezone Europe/Helsinki``` ```sudo timedatectl set-ntp true```
 
