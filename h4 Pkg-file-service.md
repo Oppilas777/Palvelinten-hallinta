@@ -61,8 +61,19 @@ Artikkelissa on esimerkkinä jonkun toisen Linux-version sshd_config tiedosto. J
 - Artikkelissa esitellään yksinkertainen Salt-tila, jolla vaihdetaan SSH-palvelimen portti. Ensin määritetään Saltin master–slave-      arkkitehtuuri. Master-palvelimelle luodaan tila nimeltä sshd.sls.Masterille tallennetaan myös konfiguraatiotiedoston pääkopio         (sshd_config).
 
 
-
-
+Luodaan SSH_tila:
+```
+cat /srv/salt/sshd.sls
+openssh-server:
+ pkg.installed
+/etc/ssh/sshd_config:
+ file.managed:
+   - source: salt://sshd_config
+sshd:
+ service.running:
+   - watch:
+     - file: /etc/ssh/sshd_config
+```
 
 
 
