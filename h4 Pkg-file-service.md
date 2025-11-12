@@ -28,7 +28,7 @@ Lopuksi aikavyöhykkeen asennus, jotta ohjelmat toimivat oikein: ```timedatectl 
 
 
 
-{sudo apt-get update}
+``` bash sudo apt-get update```
 
 -----
 
