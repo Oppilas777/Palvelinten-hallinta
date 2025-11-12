@@ -18,10 +18,6 @@ Oracle Virtualbox
 
 Debian 13 (trixie)
 
-```
-sudo
-```
-
 -----
 
 
@@ -35,10 +31,16 @@ sudo apt-get -y install ufw \
 sudo ufw enable 
 ```
 
-Lopuksi aikavyöhykkeen asennus, jotta ohjelmat toimivat oikein: ```timedatectl status``` ```timedatectl list-timezones``` ``` sudo timedatectl set-timezone Europe/Helsinki``` ```sudo timedatectl set-ntp true```
+Lopuksi aikavyöhykkeen asennus, jotta ohjelmat toimivat oikein: 
 
+```
+timedatectl status
+timedatectl list-timezones
+sudo timedatectl set-timezone Europe/Helsinki
+sudo timedatectl
+set-ntp true
+```
 
-```sudo```
  
 
 -----
