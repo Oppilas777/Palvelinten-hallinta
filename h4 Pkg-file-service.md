@@ -93,7 +93,7 @@ tero@tero.example.com's password:
 
 Ja muistutuksena, moduli omaan kansioonsa, eli /srv/salt/ssh/init.sls (eikä hujan hajan /srv/salt/ssh.sls)
 
-
+###### 9:25
 -----
 
 
