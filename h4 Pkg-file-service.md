@@ -76,7 +76,7 @@ Artikkelissa on esimerkkinä jonkun toisen Linux-version sshd_config tiedosto. J
 
 
 
-Lahteet
+Lähteet 
 -----
 
 GitHub 2025. Joonas Janttonen. Laksyt. Luettavissa: https://github.com/JoonasJanttonen/Palvelinten-hallinta/edit/main/h3%20Soitto%20kotiin.md. Luettu: 12.11.2025.
