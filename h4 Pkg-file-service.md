@@ -94,10 +94,22 @@ Ja muistutuksena, moduli omaan kansioonsa, eli /srv/salt/ssh/init.sls (eikä huj
 
 a) SSHouto. Lisää uusi portti, jossa SSHd kuuntelee.
 
+Aloitan lataamalla Vagrant debianille. Tata ennen olin ladannut sen Windowsille. 
+
+Lisäätään HashiCorpin APT-avaimet ja repositorio. Näin varmisttaan samalla, että versio on uusin.
+
+```
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+```
 
 
-
-
+Seuraavaksi pakettiliastan päivitys ja Vagrantin - asennus.
+```
+sudo apt update
+sudo apt install vagrant
+```
+Kolmas vaihde, jossa varmistetaan, etta asennus on valmiina:
 
 
 
