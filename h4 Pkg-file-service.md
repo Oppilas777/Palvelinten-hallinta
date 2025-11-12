@@ -27,8 +27,8 @@ Aloitan syöttämällä tutut komennot, kuten:
 Lopuksi aikavyöhykkeen asennus, jotta ohjelmat toimivat oikein: ```timedatectl status``` ```timedatectl list-timezones``` ``` sudo timedatectl set-timezone Europe/Helsinki``` ```sudo timedatectl set-ntp true```
 
 
-
-``` bash sudo apt-get update```
+```sudo```
+ 
 
 -----
 
