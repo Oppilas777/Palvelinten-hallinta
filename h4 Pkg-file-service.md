@@ -40,11 +40,7 @@ sudo timedatectl set-timezone Europe/Helsinki
 sudo timedatectl
 set-ntp true
 ```
-
- 
-
 -----
-
 
 ###### 8:37
 
@@ -95,6 +91,10 @@ Ja muistutuksena, moduli omaan kansioonsa, eli /srv/salt/ssh/init.sls (eikä huj
 
 ###### 9:25
 -----
+
+###### 9:35
+
+a) SSHouto. Lisää uusi portti, jossa SSHd kuuntelee.
 
 
 
