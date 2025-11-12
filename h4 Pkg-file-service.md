@@ -54,7 +54,11 @@ Karvinen 2018: Pkg-File-Service – Control Daemons with Salt – Change SSH Ser
 
 Artikkelissa on esimerkkinä jonkun toisen Linux-version sshd_config tiedosto. Jos tekisit samanlaisen, niin käyttäisit tietysti oman järjestelmäsi asetustiedostoa pohjana.
 
-- 
+- Konfiguraationhallintajärjestelmällä voidaan hallita suurta määrää daemoneja.
+  Yleinen toimintamalli on package-file-service: ensin asennetaan tarvittava ohjelmisto sen jälkeen korvataan konfiguraatiotiedosto
+  lopuksi käynnistetään daemon uudelleen, jotta uusi konfiguraatio otetaan käyttöön.
+
+- Artikkelissa esitellään yksinkertainen Salt-tila, jolla vaihdetaan SSH-palvelimen portti. Ensin määritetään Saltin master–slave-      arkkitehtuuri. Master-palvelimelle luodaan tila nimeltä sshd.sls.Masterille tallennetaan myös konfiguraatiotiedoston pääkopio         (sshd_config).
 
 
 
