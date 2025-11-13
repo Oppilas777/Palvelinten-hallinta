@@ -132,10 +132,44 @@ SSHd kuuntelee
 ###### 17:50 
 b) Vapaaehtoinen, haastavahko tässä vaiheessa: Asenna ja konfiguroi Apache ja Name Based Virtual Host. Sen tulee näyttää palvelimen etusivulla weppisivua. Weppisivun tulee olla muokattavissa käyttäjän oikeuksin, ilman sudoa.
 
-  
-<img width="1082" height="758" alt="Screenshot From 2025-11-13 19-15-50" src="https://github.com/user-attachments/assets/42484412-40a9-438f-bfbb-995f61c27911" />
+Syotin terminaalissa seuraavat kaskyt:
 
+```
+sudo systemctl enable apache2
+sudo nano /etc/apache2/sites-available/test.com.conf
+sudo a2ensite example.com.conf
+systemctl reload apache2
+```
+```
+sudo nano /etc/hosts
+sudo mkdir -p /var/www/example.com/public_html
+sudo chown -R joonas:joonas /var/www/example.com
+```
+Seuraavaksi muokkasin sivuja.
+```
+echo '<html><body><h1>Welcome to example.com!</h1></body></html>' > /var/www/example.com/public_html/index.html
+echo '<html><body><h1>Welcome to test.com!</h1></body></html>' > /var/www/test.com/public_html/index.html
+```
+Tarkistan, etta tiedostot ovat olemassa.
+```
+ls /var/www/example.com/public_html
+ls /var/www/test.com/public_html
+```
+Varmistan, etta sivu(t) kaynnistyvat.
+```
+sudo nano /etc/hosts
+sudo a2ensite example.com.conf
+sudo systemctl reload apache2
+sudo tail -f /var/log/apache2/error.log
+```
 
+<img width="975" height="646" alt="Screenshot From 2025-11-13 19-42-41" src="https://github.com/user-attachments/assets/5bbf150f-18c9-4065-aa2f-f951a024f048" />
+
+Nakyma terminaalista. Kuvasta voi havaita, etta olen muokannut sivuja ilman sudoa.
+
+<img width="977" height="157" alt="Screenshot From 2025-11-13 19-54-52" src="https://github.com/user-attachments/assets/d6300dd9-91aa-4ca9-af57-a5f923b4d9f6" />
+
+Esimerkki sivuista, jonka muokkasin.
 
 
 
