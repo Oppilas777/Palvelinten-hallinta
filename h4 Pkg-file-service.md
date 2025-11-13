@@ -129,10 +129,11 @@ Nyt nayttaisi silta, etta SSH kuuntelee naita.
 SSHd kuuntelee
 
 ###### 17:48 
+###### 17:50 
+b) Vapaaehtoinen, haastavahko tässä vaiheessa: Asenna ja konfiguroi Apache ja Name Based Virtual Host. Sen tulee näyttää palvelimen etusivulla weppisivua. Weppisivun tulee olla muokattavissa käyttäjän oikeuksin, ilman sudoa.
 
-
-
-
+  
+<img width="1082" height="758" alt="Screenshot From 2025-11-13 19-15-50" src="https://github.com/user-attachments/assets/42484412-40a9-438f-bfbb-995f61c27911" />
 
 
 
