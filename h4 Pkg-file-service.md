@@ -120,6 +120,15 @@ Kolmas vaihde, jossa varmistetaan, etta asennus on valmiina:
 
 Varmistan, etta portti 22 on auki.
 
+<img width="821" height="242" alt="Screenshot From 2025-11-13 17-29-52" src="https://github.com/user-attachments/assets/814659df-9153-476c-b6bb-6f7f6cb20d10" />
+
+Nyt nayttaisi silta, etta SSH kuuntelee naita.
+
+<img width="829" height="403" alt="Screenshot From 2025-11-13 17-40-12" src="https://github.com/user-attachments/assets/0f1ecad5-04e2-4262-8d04-aaad8e37fb31" />
+
+SSHd kuuntelee
+
+
 
 
 
