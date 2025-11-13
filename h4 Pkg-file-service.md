@@ -117,6 +117,10 @@ Kolmas vaihde, jossa varmistetaan, etta asennus on valmiina:
 ###### 13.11.2025.
 ###### 15:27 
 
+Uusi yritys! Jatkan siita mitihin jain, eli tehtava a).
+
+
+
 Lähteet 
 -----
 
