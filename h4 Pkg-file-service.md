@@ -116,9 +116,14 @@ Kolmas vaihde, jossa varmistetaan, etta asennus on valmiina:
 
 <img width="741" height="63" alt="Image" src="https://github.com/user-attachments/assets/db2a4cfb-f372-45ff-925c-4f72bd4b02d9" />
 
+<img width="537" height="290" alt="Screenshot From 2025-11-13 15-55-58" src="https://github.com/user-attachments/assets/d4da2768-7f99-4d67-8725-61a9a1fa0c5b" />
+
+Varmistan, etta portti 22 on auki.
 
 
-Uusi yritys! Jatkan siita mitihin jain, eli tehtava a).
+
+
+
 
 
 
