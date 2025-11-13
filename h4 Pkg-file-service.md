@@ -91,6 +91,9 @@ Ja muistutuksena, moduli omaan kansioonsa, eli /srv/salt/ssh/init.sls (eikä huj
 -----
 
 ###### 9:35
+###### 11:57
+###### 13.11.2025.
+###### 15:27 
 
 a) SSHouto. Lisää uusi portti, jossa SSHd kuuntelee.
 
@@ -113,9 +116,7 @@ Kolmas vaihde, jossa varmistetaan, etta asennus on valmiina:
 
 <img width="741" height="63" alt="Image" src="https://github.com/user-attachments/assets/db2a4cfb-f372-45ff-925c-4f72bd4b02d9" />
 
-###### 11:57
-###### 13.11.2025.
-###### 15:27 
+
 
 Uusi yritys! Jatkan siita mitihin jain, eli tehtava a).
 
