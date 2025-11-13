@@ -128,6 +128,8 @@ Nyt nayttaisi silta, etta SSH kuuntelee naita.
 
 SSHd kuuntelee
 
+###### 17:48 
+
 
 
 
