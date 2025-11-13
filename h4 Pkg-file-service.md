@@ -169,8 +169,9 @@ Nakyma terminaalista. Taman pitaisi nyt vastata tehtanantoa.
 
 <img width="977" height="157" alt="Screenshot From 2025-11-13 19-54-52" src="https://github.com/user-attachments/assets/d6300dd9-91aa-4ca9-af57-a5f923b4d9f6" />
 
-Esimerkki sivuista, jonka muokkasin.
+Tassa sivu, jonka muokkasin.
 
+###### 20:05
 
 
 Lähteet 
