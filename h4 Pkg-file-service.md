@@ -113,6 +113,9 @@ Kolmas vaihde, jossa varmistetaan, etta asennus on valmiina:
 
 <img width="741" height="63" alt="Image" src="https://github.com/user-attachments/assets/db2a4cfb-f372-45ff-925c-4f72bd4b02d9" />
 
+###### 11:57
+###### 13.11.2025.
+###### 15:27 
 
 Lähteet 
 -----
