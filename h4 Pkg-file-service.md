@@ -165,7 +165,7 @@ sudo tail -f /var/log/apache2/error.log
 
 <img width="975" height="646" alt="Screenshot From 2025-11-13 19-42-41" src="https://github.com/user-attachments/assets/5bbf150f-18c9-4065-aa2f-f951a024f048" />
 
-Nakyma terminaalista. Kuvasta voi havaita, etta olen muokannut sivuja ilman sudoa.
+Nakyma terminaalista. Taman pitaisi nyt vastata tehtanantoa.
 
 <img width="977" height="157" alt="Screenshot From 2025-11-13 19-54-52" src="https://github.com/user-attachments/assets/d6300dd9-91aa-4ca9-af57-a5f923b4d9f6" />
 
