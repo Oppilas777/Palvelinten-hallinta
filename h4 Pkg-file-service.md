@@ -150,7 +150,7 @@ Seuraavaksi muokkasin sivuja.
 echo '<html><body><h1>Welcome to example.com!</h1></body></html>' > /var/www/example.com/public_html/index.html
 echo '<html><body><h1>Welcome to test.com!</h1></body></html>' > /var/www/test.com/public_html/index.html
 ```
-Tarkistan, etta tiedostot ovat olemassa.
+Tarkistan, että tiedostot ovat olemassa.
 ```
 ls /var/www/example.com/public_html
 ls /var/www/test.com/public_html
@@ -179,7 +179,7 @@ Testisivua muokkasin terminaalin kautta, ja siitä kuvankaappaus.
 
 c) Vapaaehtoinen, haastava: Caddy. Asenna Caddy tarjoilemaan weppisivua. Weppisivun tulee näkyä palvelimen etusivulla (localhost). HTML:n tulee olla jonkun käyttäjän kotihakemistossa, ja olla muokattavissa normaalin käyttäjän oikeuksin, ilman sudoa.
 
-Tässä kohtaa Apachelle oli varattu portti 80. Vaihdoin tai sammutin tämän, ja lisäsin Apachelle toisen portin, jota käyttää. Tämän jälkeen asetin Caddyn:n käyttämään porttia 80.
+Tässä kohtaa Apachelle oli varattu portti 80. Vaihdoin tai sammutin tämän, ja lisäsin Apachelle portin 8080. Tämän jälkeen asetin Caddyn:n käyttämään porttia 80.
 Tätä samaa hyödynsi myös muissa tehtävissä. (Eitca S.a.) 
 
 ```
@@ -202,7 +202,7 @@ sudo systemctl restart caddy
 joonas@Joonasdebian:~$ sudo systemctl status caddy
 ```
 
-Annetaan oikeudet tavallisille kayttajalle:
+Annetaan oikeudet (tavallisille) käyttäjille:
 
 ```
 whoami
@@ -213,7 +213,7 @@ nano /var/www/html/index.html
 
 Yhteenvetona:
 Tavallinen käyttäjä voi muokata tiedostoa, kunhan hänellä on oikeudet kirjoittaa tiedostoon ja hakemistoon.
-Omistajuuden muuttaminen omalle käyttäjälle tai oikeuksien säätäminen (kuten chmod 755) mahdollistaa muokkaamisen ilman sudo-oikeuksia.
+Omistajuuden muuttaminen omalle käyttäjälle tai oikeuksien säätäminen (kuten chmod 755) mahdollistaa muokkaamisen ilman sudo-oikeuksia. (Linux.fi S.a)
 
 
 <img width="900" height="332" alt="Screenshot From 2025-11-14 11-11-59" src="https://github.com/user-attachments/assets/7241cf4b-7c72-42cb-9926-5c2465e7aa5e" />
@@ -232,13 +232,13 @@ sudo apt update
 sudo apt install nginx
 ```
 
-Konfugorointi:
+Konfigurointi:
 
 ```
 mkdir -p /home/joonas/public_html
 ```
 
-Annetaan oikeudet toimia ilman sudoa. Tama mahdollistaa tiedostojen muokkaamisen, ilman sudo - oikeuksia.
+Annetaan oikeudet toimia ilman sudoa. Tämä mahdollistaa tiedostojen muokkaamisen, ilman sudo - oikeuksia.
 
 ```
 sudo chown -R joonas:joonas /home/joonas/public_html
@@ -294,6 +294,8 @@ Yhteenveto:
 
 ###### 12:29 
 ###### 12:33
+
+
 e) Vapaaehtoinen, haastava: PostgreSQL. Asenna PostgreSQL-tietokannanhallintajärjestelmä. Anna jollekin käyttäjälle oma tietokanta. Osoita testillä, että se toimii.
 
 ```
@@ -317,7 +319,7 @@ GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
 
 ```
 
-Tyhjensin tiedoston, ja sisallytin nama sinne:
+Tyhjensin tiedoston, ja muokkasin nämä:
 
 local   all             all                                     md5
 host    all             all             127.0.0.1/32            md5
@@ -326,22 +328,26 @@ host    all             all             ::1/128                 md5
 
 <img width="806" height="223" alt="Screenshot From 2025-11-14 12-52-17" src="https://github.com/user-attachments/assets/f53084ce-503b-4393-b127-06cb13569e94" />
 
-Testi
+Testitulos!
 
-Osoitetaan testilla, etta toimii:
+Osoitetaan testillä, että tehtävä on suoritettu onnistuneeti:
 
 <img width="960" height="536" alt="Screenshot From 2025-11-14 13-01-13" src="https://github.com/user-attachments/assets/28e7a64e-cf9d-41fe-8cb0-33ff1469376a" />
 
-
-Asentamisen jalkeen: Tietokannanhallintajärjestelmä (PostgreSQL) asennettiin koneelle, jotta voidaan käyttää relaatiotietokantaa.
-Luotiin uusi käyttäjä.PostgreSQL:ään lisättiin käyttäjä (esim. CREATE USER nimi WITH PASSWORD 'salasana';). Tämä käyttäjä sai omat tunnukset tietokantaan. Annettiin käyttäjälle oma tietokanta. Luotiin uusi tietokanta (esim. CREATE DATABASE kayttaja_db OWNER nimi;). Käyttäjä sai oikeudet hallita juuri tätä tietokantaa. Testattiin toimivuus. Kirjauduttiin sisään kyseisen käyttäjän tunnuksilla. Suoritettiin yksinkertainen testi, esim. taulun luonti ja rivin lisääminen (CREATE TABLE, INSERT, SELECT).
+"Debianille asennettiin PostgreSQL, jotta voidaan käyttää relaatiotietokantaa. 
+Mikä on PostgreSQL? Yksinkertaisin vastaus kysymykseen on avoimen lähdekoodin objektirelaatiotietokannan hallintajärjestelmä (ORDBMS). Tämä järjestelmä tunnetaan täysin SQL-standardien ja edistyneiden ominaisuuksistaan. PostgreSQL tukee monimutkaisia tietotyyppejä, edistyneitä indeksointitekniikoita ja luotettavuutta priorisoivaa arkkitehtuuria. Näiden ominaisuuksien ansiosta se on ensisijainen ratkaisu sekä pienimuotoisiin projekteihin että suuriin yrityssovelluksiin". (Hostagrons, luku 1)
 
 ###### 13 :12 
 
-Kaikki tehtavat olivat haastavia. Voi olla, etta virheita on tehtavissa.
 
 
+Nämä olivat haastavia tehtäviä. Tehtävien tekemisissä saattaa esiintyä virheitä, mutta ainakin yritin.
 
+
+###### 14.11.2025.
+###### 18:47
+Raportin viimeistelyä
+###### 20:01
 
 Lähteet 
 -----
@@ -351,6 +357,10 @@ CaddyServer 2025. Install. Luettavissa: https://caddyserver.com/docs/install. Lu
 Eitca S.a. Mikä on portin 80 valvonnan tarkoitus Monitilla, kun nginx on käynnissä? Luettavissa: https://fi.eitca.org/tietoverkkojen/eitc-on-lsa-linux--j%C3%A4rjestelm%C3%A4n-hallinta/edistynyt-sysadmin-Linuxissa/linux-j%C3%A4rjestelmien-ja--palveluiden-seuranta-monitilla/koetarkistus-linux-j%C3%A4rjestelmien-ja--palveluiden-seuranta-monitilla/mik%C3%A4-on-portin-80-tarkkailu-monitilla%2C-kun-nginx-on-k%C3%A4ynniss%C3%A4/#:~:text=Portin%2080%20valvonta%20Monitilla%20Nginx%2Dverkkopalvelinta%20k%C3%A4ytett%C3%A4ess%C3%A4%20palvelee,ennakoivasti%20valvoa%20ja%20hallita%20Linux%2Dj%C3%A4rjestelm%C3%A4n%20eri%20puolia%2C. Luettu: 14.11.2025.
 
 GitHub 2025. Joonas Janttonen. Laksyt. Luettavissa: https://github.com/JoonasJanttonen/Palvelinten-hallinta/edit/main/h3%20Soitto%20kotiin.md. Luettu: 12.11.2025.
+
+Hostragons 2025. Mikä on PostgreSQL ja milloin sitä tulisi suosia MySQL:n sijaan? Luettavissa: https://www.hostragons.com/fi/blogi/mika-on-postgresql-missa-tapauksissa-sita-tulisi-suosia-mysqln-sijaan/#PostgreSQL_Nedir_Ve_Neden_Tercih_Edilmeli. Luettu: 14.11.2025.
+
+Linux 2025. Tiedoston oikeudet. Luettavissa: https://www.linux.fi/wiki/Tiedoston_oikeudet. Luettu: 14.11.2025.
 
 Microfocus 2025. Luettavissa: https://www.microfocus.com/documentation/idol/IDOL_12_0/MediaServer/Guides/html/English/Content/Getting_Started/Configure/_TRN_Set_up_PostgreSQL_Linux.htm. Luettu: 14.11.2025.
 
