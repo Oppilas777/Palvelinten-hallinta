@@ -324,6 +324,20 @@ host    all             all             127.0.0.1/32            md5
 host    all             all             ::1/128                 md5
 
 
+<img width="806" height="223" alt="Screenshot From 2025-11-14 12-52-17" src="https://github.com/user-attachments/assets/f53084ce-503b-4393-b127-06cb13569e94" />
+
+Testi
+
+Osoitetaan testilla, etta toimii:
+
+<img width="960" height="536" alt="Screenshot From 2025-11-14 13-01-13" src="https://github.com/user-attachments/assets/28e7a64e-cf9d-41fe-8cb0-33ff1469376a" />
+
+
+###### 12:55 
+
+
+
+
 Lähteet 
 -----
 
@@ -331,6 +345,7 @@ CaddyServer 2025. Install. Luettavissa: https://caddyserver.com/docs/install. Lu
 
 GitHub 2025. Joonas Janttonen. Laksyt. Luettavissa: https://github.com/JoonasJanttonen/Palvelinten-hallinta/edit/main/h3%20Soitto%20kotiin.md. Luettu: 12.11.2025.
 
+Microfocus 2025. Luettavissa: https://www.microfocus.com/documentation/idol/IDOL_12_0/MediaServer/Guides/html/English/Content/Getting_Started/Configure/_TRN_Set_up_PostgreSQL_Linux.htm. Luettu: 14.11.2025.
 
 Tero Karvinen 2025. Palvelinten hallinta. Luettavissa: https://terokarvinen.com/palvelinten-hallinta/#laksyt. Luettu: 12.11.2025.
 
@@ -338,4 +353,4 @@ Tero Karvinen 2018. Pkg-File-Service – Control Daemons with Salt – Change SS
 
 Tero Karvinen 2018. Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux Luettavissa: https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/. Luettu: 12.11.2025.
 
-
+Wikipedia 13.11.2025. PostgreSQL. Luettavissa: https://fi.wikipedia.org/wiki/PostgreSQL. Luettu: 14.11.2025.
