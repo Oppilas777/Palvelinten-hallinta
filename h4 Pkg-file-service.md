@@ -317,6 +317,11 @@ GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
 
 ```
 
+Tyhjensin tiedoston, ja sisallytin nama sinne:
+
+local   all             all                                     md5
+host    all             all             127.0.0.1/32            md5
+host    all             all             ::1/128                 md5
 
 
 Lähteet 
