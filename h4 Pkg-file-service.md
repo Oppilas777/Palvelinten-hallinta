@@ -292,6 +292,10 @@ sudo systemctl restart nginx
 
 Yhteenveto:
 
+###### 12:29 
+
+e) Vapaaehtoinen, haastava: PostgreSQL. Asenna PostgreSQL-tietokannanhallintajärjestelmä. Anna jollekin käyttäjälle oma tietokanta. Osoita testillä, että se toimii.
+
 
 
 
