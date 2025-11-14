@@ -69,7 +69,7 @@ sshd:
      - file: /etc/ssh/sshd_config
 ```
 
-Salt - tilan kaytoon ottaminen tapahtuu seuraavanalisesti:
+Salt - tilan käyttöön ottaminen:
 ```
 sudo salt '*' state.apply sshd
 ```
@@ -91,6 +91,7 @@ Ja muistutuksena, moduli omaan kansioonsa, eli /srv/salt/ssh/init.sls (eikä huj
 -----
 
 ###### 9:35
+Raportin muokkaamista.
 ###### 11:57
 ###### 13.11.2025.
 ###### 15:27 
@@ -122,7 +123,7 @@ Varmistan, etta portti 22 on auki.
 
 <img width="821" height="242" alt="Screenshot From 2025-11-13 17-29-52" src="https://github.com/user-attachments/assets/814659df-9153-476c-b6bb-6f7f6cb20d10" />
 
-Nyt nayttaisi silta, etta SSH kuuntelee naita.
+Tilanne.
 
 <img width="829" height="403" alt="Screenshot From 2025-11-13 17-40-12" src="https://github.com/user-attachments/assets/0f1ecad5-04e2-4262-8d04-aaad8e37fb31" />
 
@@ -132,7 +133,7 @@ SSHd kuuntelee
 ###### 17:50 
 b) Vapaaehtoinen, haastavahko tässä vaiheessa: Asenna ja konfiguroi Apache ja Name Based Virtual Host. Sen tulee näyttää palvelimen etusivulla weppisivua. Weppisivun tulee olla muokattavissa käyttäjän oikeuksin, ilman sudoa.
 
-Syotin terminaalissa seuraavat kaskyt:
+Syötin terminaalissa seuraavat käskyt:
 
 ```
 sudo systemctl enable apache2
@@ -155,7 +156,7 @@ Tarkistan, etta tiedostot ovat olemassa.
 ls /var/www/example.com/public_html
 ls /var/www/test.com/public_html
 ```
-Varmistan, etta sivu(t) kaynnistyvat.
+Varmistan, että sivu(t) käynnistyvät.
 ```
 sudo nano /etc/hosts
 sudo a2ensite example.com.conf
@@ -165,11 +166,11 @@ sudo tail -f /var/log/apache2/error.log
 
 <img width="975" height="646" alt="Screenshot From 2025-11-13 19-42-41" src="https://github.com/user-attachments/assets/5bbf150f-18c9-4065-aa2f-f951a024f048" />
 
-Nakyma terminaalista. Taman pitaisi nyt vastata tehtanantoa.
+Näkymä terminaalista. Tämän pitäisi vastaaa tehtävänantoa. 
 
 <img width="977" height="157" alt="Screenshot From 2025-11-13 19-54-52" src="https://github.com/user-attachments/assets/d6300dd9-91aa-4ca9-af57-a5f923b4d9f6" />
 
-Tassa sivu, jonka muokkasin.
+Testisivu. Muokkasin terminaalin kautta.
 
 ###### 20:05
 
