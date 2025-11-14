@@ -182,6 +182,12 @@ c) Vapaaehtoinen, haastava: Caddy. Asenna Caddy tarjoilemaan weppisivua. Weppisi
 
 Apache kaytti porttia 80. Poistin taman, jotta Caddy voisi kayttaa sita.
 
+```
+sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
+udo apt update
+sudo apt install caddy
+```
+
 <img width="721" height="71" alt="Screenshot From 2025-11-14 10-29-08" src="https://github.com/user-attachments/assets/56aba5dc-ee51-4a53-8261-2eaf6c1f144c" />
 
 
@@ -196,9 +202,21 @@ sudo systemctl restart caddy
 joonas@Joonasdebian:~$ sudo systemctl status caddy
 ```
 
+Annetaan oikeudet tavallisille kayttajalle:
+
+```
+whoami
+sudo chown -R joonas:joonas /var/www/html
+sudo chmod -R 755 /var/www/html
+nano /var/www/html/index.html
+```
+
+Yhteenvetona:
+Tavallinen käyttäjä voi muokata tiedostoa, kunhan hänellä on oikeudet kirjoittaa tiedostoon ja hakemistoon.
+Omistajuuden muuttaminen omalle käyttäjälle tai oikeuksien säätäminen (kuten chmod 755) mahdollistaa muokkaamisen ilman sudo-oikeuksia.
 
 
-
+<img width="900" height="332" alt="Screenshot From 2025-11-14 11-11-59" src="https://github.com/user-attachments/assets/7241cf4b-7c72-42cb-9926-5c2465e7aa5e" />
 
 
 
