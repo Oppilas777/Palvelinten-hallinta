@@ -220,9 +220,38 @@ Omistajuuden muuttaminen omalle käyttäjälle tai oikeuksien säätäminen (kut
 
 
 ###### 11:14
-
+Tauko
+###### 11:25
 
 d) Vapaaehtoinen, haastava: Nginx. Asenna Nginx (lausutaan engine-X) tarjoilemaan weppisivua. Weppisivun tulee näkyä palvelimen etusivulla (localhost). HTML:n tulee olla jonkun käyttäjän kotihakemistossa, ja olla muokattavissa normaalin käyttäjän oikeuksin, ilman sudoa.
+
+Nginx asennus:
+
+```
+sudo apt update
+sudo apt install nginx
+```
+
+Konfugorointi:
+
+```
+mkdir -p /home/joonas/public_html
+```
+
+Annetaan oikeudet toimia ilman sudoa. Tama mahdollistaa tiedostojen muokkaamisen, ilman sudo - oikeuksia.
+
+```
+sudo chown -R joonas:joonas /home/joonas/public_html
+chmod -R 755 /home/joonas/public_html
+echo "Tervetuloa sivuilleni! Sivut on luotu nginx - ohjelmalla " > /home/joonas/public_html/index.html
+```
+
+
+
+
+
+
+
 
 Lähteet 
 -----
