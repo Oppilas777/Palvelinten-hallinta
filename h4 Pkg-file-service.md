@@ -219,6 +219,10 @@ Omistajuuden muuttaminen omalle käyttäjälle tai oikeuksien säätäminen (kut
 <img width="900" height="332" alt="Screenshot From 2025-11-14 11-11-59" src="https://github.com/user-attachments/assets/7241cf4b-7c72-42cb-9926-5c2465e7aa5e" />
 
 
+###### 11:14
+
+
+d) Vapaaehtoinen, haastava: Nginx. Asenna Nginx (lausutaan engine-X) tarjoilemaan weppisivua. Weppisivun tulee näkyä palvelimen etusivulla (localhost). HTML:n tulee olla jonkun käyttäjän kotihakemistossa, ja olla muokattavissa normaalin käyttäjän oikeuksin, ilman sudoa.
 
 Lähteet 
 -----
