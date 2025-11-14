@@ -293,9 +293,26 @@ sudo systemctl restart nginx
 Yhteenveto:
 
 ###### 12:29 
-
+###### 12:33
 e) Vapaaehtoinen, haastava: PostgreSQL. Asenna PostgreSQL-tietokannanhallintajärjestelmä. Anna jollekin käyttäjälle oma tietokanta. Osoita testillä, että se toimii.
 
+sudo apt update
+sudo apt install postgresql postgresql-contrib -y
+
+sudo -i -u postgres
+
+psql
+
+
+CREATE USER myuser WITH PASSWORD 'mypassword';
+
+CREATE DATABASE mydb OWNER myuser;
+
+GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
+
+GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
+
+\q
 
 
 
