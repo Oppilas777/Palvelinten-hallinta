@@ -356,7 +356,7 @@ CaddyServer 2025. Install. Luettavissa: https://caddyserver.com/docs/install. Lu
 
 Eitca S.a. Mikä on portin 80 valvonnan tarkoitus Monitilla, kun nginx on käynnissä? Luettavissa: https://fi.eitca.org/tietoverkkojen/eitc-on-lsa-linux--j%C3%A4rjestelm%C3%A4n-hallinta/edistynyt-sysadmin-Linuxissa/linux-j%C3%A4rjestelmien-ja--palveluiden-seuranta-monitilla/koetarkistus-linux-j%C3%A4rjestelmien-ja--palveluiden-seuranta-monitilla/mik%C3%A4-on-portin-80-tarkkailu-monitilla%2C-kun-nginx-on-k%C3%A4ynniss%C3%A4/#:~:text=Portin%2080%20valvonta%20Monitilla%20Nginx%2Dverkkopalvelinta%20k%C3%A4ytett%C3%A4ess%C3%A4%20palvelee,ennakoivasti%20valvoa%20ja%20hallita%20Linux%2Dj%C3%A4rjestelm%C3%A4n%20eri%20puolia%2C. Luettu: 14.11.2025.
 
-GitHub 2025. Joonas Janttonen. Laksyt. Luettavissa: https://github.com/JoonasJanttonen/Palvelinten-hallinta/edit/main/h3%20Soitto%20kotiin.md. Luettu: 12.11.2025.
+GitHub 2025. Joonas Janttonen. Soitto kotiin. Läksyt. Luettavissa: https://github.com/JoonasJanttonen/Palvelinten-hallinta/edit/main/h3%20Soitto%20kotiin.md. Luettu: 12.11.2025.
 
 Hostragons 2025. Mikä on PostgreSQL ja milloin sitä tulisi suosia MySQL:n sijaan? Luettavissa: https://www.hostragons.com/fi/blogi/mika-on-postgresql-missa-tapauksissa-sita-tulisi-suosia-mysqln-sijaan/#PostgreSQL_Nedir_Ve_Neden_Tercih_Edilmeli. Luettu: 14.11.2025.
 
