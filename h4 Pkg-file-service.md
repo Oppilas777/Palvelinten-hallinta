@@ -175,6 +175,13 @@ Testisivu. Muokkasin terminaalin kautta.
 ###### 20:05
 
 
+###### 14.11.2025.
+###### 9:53 
+
+c) Vapaaehtoinen, haastava: Caddy. Asenna Caddy tarjoilemaan weppisivua. Weppisivun tulee näkyä palvelimen etusivulla (localhost). HTML:n tulee olla jonkun käyttäjän kotihakemistossa, ja olla muokattavissa normaalin käyttäjän oikeuksin, ilman sudoa.
+
+
+
 Lähteet 
 -----
 
