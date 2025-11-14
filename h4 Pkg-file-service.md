@@ -180,6 +180,26 @@ Testisivu. Muokkasin terminaalin kautta.
 
 c) Vapaaehtoinen, haastava: Caddy. Asenna Caddy tarjoilemaan weppisivua. Weppisivun tulee näkyä palvelimen etusivulla (localhost). HTML:n tulee olla jonkun käyttäjän kotihakemistossa, ja olla muokattavissa normaalin käyttäjän oikeuksin, ilman sudoa.
 
+Apache kaytti porttia 80. Poistin taman, jotta Caddy voisi kayttaa sita.
+
+<img width="721" height="71" alt="Screenshot From 2025-11-14 10-29-08" src="https://github.com/user-attachments/assets/56aba5dc-ee51-4a53-8261-2eaf6c1f144c" />
+
+
+<img width="808" height="750" alt="Screenshot From 2025-11-14 10-26-17" src="https://github.com/user-attachments/assets/1d05a84f-62ae-4e09-a0a4-5d5b40dc818a" />
+
+Caddyn asentaminen onnistui!
+
+
+```
+sudo systemctl stop apache2
+sudo systemctl restart caddy
+joonas@Joonasdebian:~$ sudo systemctl status caddy
+```
+
+
+
+
+
 
 
 Lähteet 
