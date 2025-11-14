@@ -333,7 +333,12 @@ Osoitetaan testilla, etta toimii:
 <img width="960" height="536" alt="Screenshot From 2025-11-14 13-01-13" src="https://github.com/user-attachments/assets/28e7a64e-cf9d-41fe-8cb0-33ff1469376a" />
 
 
-###### 12:55 
+Asentamisen jalkeen: Tietokannanhallintajärjestelmä (PostgreSQL) asennettiin koneelle, jotta voidaan käyttää relaatiotietokantaa.
+Luotiin uusi käyttäjä.PostgreSQL:ään lisättiin käyttäjä (esim. CREATE USER nimi WITH PASSWORD 'salasana';). Tämä käyttäjä sai omat tunnukset tietokantaan. Annettiin käyttäjälle oma tietokanta. Luotiin uusi tietokanta (esim. CREATE DATABASE kayttaja_db OWNER nimi;). Käyttäjä sai oikeudet hallita juuri tätä tietokantaa. Testattiin toimivuus. Kirjauduttiin sisään kyseisen käyttäjän tunnuksilla. Suoritettiin yksinkertainen testi, esim. taulun luonti ja rivin lisääminen (CREATE TABLE, INSERT, SELECT).
+
+###### 13 :12 
+
+Kaikki tehtavat olivat haastavia. Voi olla, etta virheita on tehtavissa.
 
 
 
