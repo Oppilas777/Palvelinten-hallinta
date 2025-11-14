@@ -52,7 +52,7 @@ Artikkelissa on esimerkkinä jonkun toisen Linux-version sshd_config tiedosto. J
   Yleinen toimintamalli on package-file-service: ensin asennetaan tarvittava ohjelmisto sen jälkeen korvataan konfiguraatiotiedosto
   lopuksi käynnistetään daemon uudelleen, jotta uusi konfiguraatio otetaan käyttöön.
 
-- Artikkelissa esitellään yksinkertainen Salt-tila, jolla vaihdetaan SSH-palvelimen portti. Ensin määritetään Saltin master–slave-      arkkitehtuuri. Master-palvelimelle luodaan tila nimeltä sshd.sls.Masterille tallennetaan myös konfiguraatiotiedoston pääkopio         (sshd_config).
+- Artikkelissa esitellään yksinkertainen Salt-tila, jolla vaihdetaan SSH-palvelimen portti. Ensin määritetään Saltin master–slave -arkkitehtuuri. Master-palvelimelle luodaan       tila nimeltä sshd.sls. Masterille tallennetaan myös konfiguraatiotiedoston pääkopio (sshd_config).
 
 
 Luodaan SSH_tila:
@@ -85,7 +85,7 @@ ssh -p 8888 tero@tero.example.com
 tero@tero.example.com's password:
 ```
 
-Ja muistutuksena, moduli omaan kansioonsa, eli /srv/salt/ssh/init.sls (eikä hujan hajan /srv/salt/ssh.sls)
+"Ja muistutuksena, moduli omaan kansioonsa, eli /srv/salt/ssh/init.sls (eikä hujan hajan /srv/salt/ssh.sls)". (Luettavissa: https://terokarvinen.com/palvelinten-hallinta/#laksyt)
 
 ###### 9:25
 -----
@@ -93,12 +93,11 @@ Ja muistutuksena, moduli omaan kansioonsa, eli /srv/salt/ssh/init.sls (eikä huj
 ###### 9:35
 Raportin muokkaamista.
 ###### 11:57
+
 ###### 13.11.2025.
 ###### 15:27 
 
 a) SSHouto. Lisää uusi portti, jossa SSHd kuuntelee.
-
-Aloitan lataamalla Vagrant debianille. Tata ennen olin ladannut sen Windowsille. 
 
 Lisäätään HashiCorpin APT-avaimet ja repositorio. Näin varmisttaan samalla, että versio on uusin.
 
@@ -113,7 +112,7 @@ Seuraavaksi pakettiliastan päivitys ja Vagrantin - asennus.
 sudo apt update
 sudo apt install vagrant
 ```
-Kolmas vaihde, jossa varmistetaan, etta asennus on valmiina:
+Kolmas vaihde, jossa varmistetaan, että asennus on valmiina:
 
 <img width="741" height="63" alt="Image" src="https://github.com/user-attachments/assets/db2a4cfb-f372-45ff-925c-4f72bd4b02d9" />
 
@@ -127,7 +126,7 @@ Tilanne.
 
 <img width="829" height="403" alt="Screenshot From 2025-11-13 17-40-12" src="https://github.com/user-attachments/assets/0f1ecad5-04e2-4262-8d04-aaad8e37fb31" />
 
-SSHd kuuntelee
+SSHd kuuntelee. Oletan, että tehtävä on onnistunut.
 
 ###### 17:48 
 ###### 17:50 
@@ -166,11 +165,11 @@ sudo tail -f /var/log/apache2/error.log
 
 <img width="975" height="646" alt="Screenshot From 2025-11-13 19-42-41" src="https://github.com/user-attachments/assets/5bbf150f-18c9-4065-aa2f-f951a024f048" />
 
-Näkymä terminaalista. Tämän pitäisi vastaaa tehtävänantoa. 
+Näkymä terminaalista.
 
 <img width="977" height="157" alt="Screenshot From 2025-11-13 19-54-52" src="https://github.com/user-attachments/assets/d6300dd9-91aa-4ca9-af57-a5f923b4d9f6" />
 
-Testisivu. Muokkasin terminaalin kautta.
+Testisivua muokkasin terminaalin kautta, ja siitä kuvankaappaus.
 
 ###### 20:05
 
@@ -180,7 +179,8 @@ Testisivu. Muokkasin terminaalin kautta.
 
 c) Vapaaehtoinen, haastava: Caddy. Asenna Caddy tarjoilemaan weppisivua. Weppisivun tulee näkyä palvelimen etusivulla (localhost). HTML:n tulee olla jonkun käyttäjän kotihakemistossa, ja olla muokattavissa normaalin käyttäjän oikeuksin, ilman sudoa.
 
-Apache kaytti porttia 80. Poistin taman, jotta Caddy voisi kayttaa sita.
+Tässä kohtaa Apachelle oli varattu portti 80. Vaihdoin tai sammutin tämän, ja lisäsin Apachelle toisen portin, jota käyttää. Tämän jälkeen asetin Caddyn:n käyttämään porttia 80.
+Tätä samaa hyödynsi myös muissa tehtävissä. (Eitca S.a.) 
 
 ```
 sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
@@ -347,6 +347,8 @@ Lähteet
 -----
 
 CaddyServer 2025. Install. Luettavissa: https://caddyserver.com/docs/install. Luettu: 14.11.2025.
+
+Eitca S.a. Mikä on portin 80 valvonnan tarkoitus Monitilla, kun nginx on käynnissä? Luettavissa: https://fi.eitca.org/tietoverkkojen/eitc-on-lsa-linux--j%C3%A4rjestelm%C3%A4n-hallinta/edistynyt-sysadmin-Linuxissa/linux-j%C3%A4rjestelmien-ja--palveluiden-seuranta-monitilla/koetarkistus-linux-j%C3%A4rjestelmien-ja--palveluiden-seuranta-monitilla/mik%C3%A4-on-portin-80-tarkkailu-monitilla%2C-kun-nginx-on-k%C3%A4ynniss%C3%A4/#:~:text=Portin%2080%20valvonta%20Monitilla%20Nginx%2Dverkkopalvelinta%20k%C3%A4ytett%C3%A4ess%C3%A4%20palvelee,ennakoivasti%20valvoa%20ja%20hallita%20Linux%2Dj%C3%A4rjestelm%C3%A4n%20eri%20puolia%2C. Luettu: 14.11.2025.
 
 GitHub 2025. Joonas Janttonen. Laksyt. Luettavissa: https://github.com/JoonasJanttonen/Palvelinten-hallinta/edit/main/h3%20Soitto%20kotiin.md. Luettu: 12.11.2025.
 
