@@ -287,6 +287,12 @@ sudo systemctl restart nginx
 ```
 
 
+<img width="807" height="386" alt="Screenshot From 2025-11-14 12-25-17" src="https://github.com/user-attachments/assets/373656a8-fcbc-4b2c-9df3-b4c5dd93f548" />
+
+
+Yhteenveto:
+
+
 
 
 
