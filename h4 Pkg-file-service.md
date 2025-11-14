@@ -243,10 +243,48 @@ Annetaan oikeudet toimia ilman sudoa. Tama mahdollistaa tiedostojen muokkaamisen
 ```
 sudo chown -R joonas:joonas /home/joonas/public_html
 chmod -R 755 /home/joonas/public_html
-echo "Tervetuloa sivuilleni! Sivut on luotu nginx - ohjelmalla " > /home/joonas/public_html/index.html
+mkdir -p ~/public_html
+echo "<h1>Hello World! Tervetuloa</h1>" > ~/public_html/index.html
+```
+Oikeudet ja luvat:
+```
+sudo chown -R joonas:joonas ~/public_html
+chmod 711 /home/joonas
+chmod 755 ~/public_html
+chmod 644 ~/public_html/index.html
 ```
 
+Nginx - sivujen konfigurointi:
+```
+sudo nano /etc/nginx/sites-available/homepage
+```
+Caddy poistettiin portista 80, ja tehtiin seuraavanlainen muutos:
 
+```
+server {
+    listen 80;
+    server_name localhost;
+
+    root /home/joonas/public_html;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
+```
+sudo ln -s /etc/nginx/sites-available/homepage /etc/nginx/sites-enabled/
+sudo rm /etc/nginx/sites-enabled/default   # Poista oletussivusto
+```
+
+Testaminen suoritettiin onnistuneesti!
+
+```
+sudo nginx -t
+sudo systemctl restart nginx
+```
 
 
 
