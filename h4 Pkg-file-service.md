@@ -99,7 +99,7 @@ Raportin muokkaamista.
 
 a) SSHouto. Lisää uusi portti, jossa SSHd kuuntelee.
 
-Lisäätään HashiCorpin APT-avaimet ja repositorio. Näin varmisttaan samalla, että versio on uusin.
+Lisäätään HashiCorpin APT-avaimet ja repositorio. Näin varmistetaan, että versio on uusin.
 
 ```
 wget -O- https://apt.releases.hashicorp.com/gpg | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
